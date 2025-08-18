@@ -1,0 +1,56 @@
+<p class="ab__p"></p>
+<div class="video-container">
+  <div class="block__news">
+    <p class="ab__p ab__pio">
+      Подходит к завершению вторая неделя обучения в колледже по образовательным программам ФП
+      "Профессионалитет". Медиацентр "В ОБЪЕКТИВЕ КИТЭКА" провел интервью с первокурсниками и
+      выяснил их впечатления и ожидания от обучения в колледже. Также студенты рассказали о
+      выбранных направлениях внеурочной деятельности, в которых они готовы себя проявить. Давайте
+      пожелаем им успехов!
+    </p>
+  </div>
+  <br />
+  <br />
+  <video class="ab__video" controls>
+    <source src="/video/Студенческая_жизнь_открывай_мир,_твори_будущее!.mp4" type="video/mp4" />
+    Ваш браузер не поддерживает видео
+  </video>
+</div>
+<br />
+<div></div>
+
+<style scoped lang="scss">
+  .block__news {
+    margin-top: 20px;
+    margin-right: 30px;
+    border-radius: 10px;
+    background-color: rgb(212, 212, 212);
+  }
+  .ab__pio {
+    margin: 10px;
+  }
+
+  .ab__video {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    display: block;
+  }
+  .video-container {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: flex-start; /* Центрирование по вертикали к началу (к верху) */
+    margin: 30px auto; /* Центрирование по горизонтали на странице */
+  }
+  /* Стили для мобильных устройств */
+  @media (max-width: 768px) {
+    .ab__video {
+      width: 100%;
+      max-height: 300px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
+</style>

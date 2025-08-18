@@ -1,0 +1,21 @@
+{
+  "title": "<b>Об оборудованных учебных кабинетах:</b>",
+  "docs": [
+    {
+      "name": "Административный корпус (ул. 27-я Северная, 69)",
+      "url": "/data/organization/logistics-equipment/27 северная.pdf"
+    },
+    {
+      "name": "Корпус №2 (ул. 24-я Северная, 123Б)",
+      "url": "/data/organization/logistics-equipment/24 северная 123б.pdf"
+    },
+    {
+      "name": "Корпус №3 (ул. 24-я Северная, 121)",
+      "url": "/data/organization/logistics-equipment/24 северная 121.pdf"
+    },
+    {
+      "name": "Отделение технологий водного транспорта (ул. Красный путь, 143)",
+      "url": "/data/organization/logistics-equipment/Красный путь 143.pdf"
+    }
+  ]
+}

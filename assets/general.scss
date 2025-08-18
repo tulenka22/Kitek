@@ -1,0 +1,43 @@
+body {
+  font-family: 'Roboto';
+  background-color: $bg-primary;
+  color: $primary-text-color;
+}
+
+.icon {
+  transition: $t color, $t transform;
+  color: $icon-color;
+  cursor: pointer;
+  &:hover {
+    color: $accent-color;
+  }
+  &-active {
+    color: $accent-color;
+  }
+}
+
+.swiper {
+  &__bullet {
+    transition: $t width, $t background-color 0.4s, $t box-shadow 0.5s;
+    width: 12px;
+    height: 12px;
+    background-color: $grey-color;
+    border-radius: 12px;
+    margin-right: 8px;
+    &:last-child {
+      margin-right: 0;
+    }
+    @include small-media {
+      width: 10px;
+      height: 10px;
+    }
+    &-active {
+      background-color: $accent-color;
+      width: 48px;
+      box-shadow: $bullet-shadow;
+      @include small-media {
+        width: 32px;
+      }
+    }
+  }
+}

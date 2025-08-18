@@ -1,0 +1,155 @@
+<template>
+  <div class="admission-container">
+    <div class="header">
+      <h1>Внимание, абитуриенты!</h1>
+    </div>
+
+    <div class="content">
+      <div class="notice-section">
+        <p>
+          Приём документов в колледж осуществляется до
+          <strong>15 августа 2025 года (до 13:00)</strong>. Если вы проходите по конкурсу, для
+          зачисления необходимо предоставить подлинник аттестата в приемную комиссию колледжа.
+        </p>
+      </div>
+
+      <div class="important-info">
+        <p>
+          Приказ о зачислении по очной форме обучения будет опубликован —
+          <strong>18–19 августа 2025 года</strong>.
+        </p>
+      </div>
+
+      <div class="address-section">
+        <h2>Адрес приемной комиссии:</h2>
+        <div class="address-card">
+          <div class="address-icon">📍</div>
+          <div class="address-text">г. Омск, ул. 27-я Северная, 69</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: 'AdmissionNotice',
+  }
+</script>
+
+<style scoped>
+  .admission-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .header h1 {
+    color: #4a4e69;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.2em;
+    position: relative;
+  }
+
+  .header h1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #9a8c98;
+    margin: 10px auto;
+    border-radius: 2px;
+  }
+
+  .content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .notice-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .notice-section strong {
+    color: #d65460;
+  }
+
+  .important-info {
+    background-color: #f0f0ff;
+    padding: 15px;
+    border-left: 4px solid #4a4e69;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .important-info p {
+    margin: 0;
+    font-style: italic;
+    color: #4a4e69;
+    font-size: 1.1em;
+  }
+
+  .important-info strong {
+    font-style: normal;
+  }
+
+  .address-section h2 {
+    color: #4a4e69;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  .address-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .address-icon {
+    font-size: 1.5em;
+    margin-right: 15px;
+    color: #4a4e69;
+  }
+
+  .address-text {
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+
+  @media (max-width: 600px) {
+    .admission-container {
+      padding: 15px;
+    }
+
+    .header h1 {
+      font-size: 1.8em;
+    }
+
+    .content {
+      padding: 15px;
+    }
+
+    .address-card {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .address-icon {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+</style>

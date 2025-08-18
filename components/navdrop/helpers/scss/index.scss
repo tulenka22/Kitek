@@ -1,0 +1,57 @@
+.elem {
+  padding: 24px;
+  box-shadow: $control-shadow;
+  &__grid {
+    display: grid;
+    gap: 20px;
+    &-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &-1 {
+      display: block;
+    }
+  }
+}
+
+.column {
+  &__title {
+    @extend %tg-navbar-header;
+    color: $nav-category;
+    margin-bottom: 10px;
+    user-select: none;
+  }
+  &__link {
+    position: relative;
+    display: block;
+    @extend %tg-navbar-min;
+    color: $primary-text-color;
+    max-width: 250px;
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover::before {
+      opacity: 1;
+    }
+    &::before {
+      content: '';
+      transition: $t opacity;
+      position: absolute;
+      left: -6px;
+      top: 0;
+      width: 3px;
+      opacity: 0;
+      background-color: $accent-color;
+      height: 100%;
+      border-radius: 5px;
+    }
+    &-active {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+}

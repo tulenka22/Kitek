@@ -1,0 +1,66 @@
+@import './mixins';
+
+%tg-header {
+  @include tg(32px, 600, 40px, normal, 'Montserrat');
+}
+
+%tg-ab-subtitle {
+  @include tg(18px, 700, 19px, normal, 'Montserrat');
+}
+
+%tg-ab-text {
+  @include tg(16px, 500, 17px, 0.5px, 'Montserrat');
+}
+
+%tg-h2 {
+  @include tg(24px, 500, auto, normal, 'Montserrat');
+}
+
+%tg-h2-mobile {
+  @include tg(16px, 500, auto, normal, 'Montserrat');
+}
+
+%tg-h3 {
+  @include tg(21px, 400, 28px, 2px, 'Montserrat');
+}
+
+%tg-navbar {
+  @include tg(15px);
+}
+
+%tg-navbar-header {
+  @include tg(15px, 500, normal, 0.2px);
+  text-transform: uppercase;
+}
+
+%tg-navbar-min {
+  @include tg(14px);
+}
+
+%tg-slide-title {
+  @include tg(32px, 500);
+}
+
+%tg-slide-subtitle {
+  @include tg(25px);
+}
+
+%tg-block-title {
+  @include tg(30px, 600, 48px, normal, 'Montserrat');
+}
+
+%tg-block-title-m {
+  @include tg(21px, 600, 21px, normal, 'Montserrat');
+}
+
+%tg-news-card-title {
+  @include tg(18px, 500);
+}
+
+%tg-news-card-description {
+  @include tg(16px, 500, 24px, 1px, 'Montserrat');
+}
+
+%tg-event-card-subtitle {
+  @include tg(14px, 400);
+}

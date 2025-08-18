@@ -1,0 +1,46 @@
+<p class="ab__p"></p>
+<div class="ab__video">
+  <video class="ab__video" controls>
+    <source src="/video/2025-04-07_Ролик Целевое обучение_правки6.mp4" type="video/mp4" />
+    Ваш браузер не поддерживает видео
+  </video>
+</div>
+
+<br />
+<div>
+  <div class="img-container">
+    <img class="img-single__minimg" src="/img/news/601/preview.webp" />
+  </div>
+</div>
+
+<style>
+  .ab__video {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 800px; /* Максимальная ширина видео */
+    padding: 20px; /* Отступы вокруг видео */
+    background-color: #f0f0f0; /* Фоновый цвет */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+  }
+
+  .ab__video video {
+    width: 100%; /* Ширина видео */
+    height: auto; /* Автоматическая высота */
+    border-radius: 10px; /* Закругленные углы */
+  }
+
+  /* Медиа-запросы для адаптивности */
+
+  @media (max-width: 768px) {
+    .ab__video {
+      padding: 10px; /* Уменьшение отступов на меньших экранах */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .ab__video {
+      padding: 5px; /* Ещё меньше отступов на очень маленьких экранах */
+    }
+  }
+</style>

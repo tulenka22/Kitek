@@ -1,0 +1,178 @@
+<div class="brain-health-container">
+  <div class="header">
+    <h1>Акция «Заряжаем мозг»</h1>
+  </div>
+
+  <div class="content">
+    <div class="description">
+      <p>Приглашаем всех принять участие в профилактической акции «Заряжаем мозг».</p>
+      <p>Цель акции - сохранение здоровья головного мозга и повышение психического благополучия.</p>
+      <p>Она включает целый комплекс упражнений и заданий.</p>
+    </div>
+
+    <div class="brain-info">
+      <p>
+        Головной мозг – основная контролирующая система организма, которая управляет практически
+        всеми функциями нашего тела, и его состояние является важной составляющей общего состояния
+        здоровья. Именно поэтому в нашем регионе запущена акция «Заряжаем мозг», которая поможет
+        омичам сохранить свое здоровье.
+      </p>
+    </div>
+
+    <div class="participation">
+      <h2>Как принять участие:</h2>
+      <ul class="steps">
+        <li>
+          💥 Ознакомиться с информационными материалами:
+          <div class="documents">
+            <a href="/img/news/626/news1.pdf" class="document-link">«Заряжаем мозг»</a> и
+            <a href="/img/news/626/news2.pdf" class="document-link">«О здоровье мозга»</a>;
+          </div>
+        </li>
+        <li>
+          💥 В течение недели ежедневно выполнять упражнения, способствующие улучшению мозгового
+          кровообращения;
+        </li>
+        <li>
+          💥 В течение недели ежедневно включать в рацион питания продукты, полезные для здоровья
+          мозга.
+        </li>
+      </ul>
+    </div>
+    <br />
+    <div>
+      <div class="img-container">
+        <img class="img-single__minimg" src="/img/news/626/preview.webp" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  export default {
+    name: 'BrainHealthCampaign',
+  }
+</script>
+
+<style scoped>
+  .brain-health-container {
+    max-width: 800px;
+
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .header h1 {
+    color: #4a4e69;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.2em;
+    position: relative;
+  }
+
+  .header h1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #9a8c98;
+    margin: 10px auto;
+    border-radius: 2px;
+  }
+
+  .content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .description p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .brain-info {
+    background-color: #f0f0ff;
+    padding: 15px;
+    border-left: 4px solid #4a4e69;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .brain-info p {
+    margin: 0;
+    font-style: italic;
+    color: #4a4e69;
+  }
+
+  .participation h2 {
+    color: #4a4e69;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  .steps {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .steps li {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.5;
+  }
+
+  .steps li::before {
+    content: '•';
+    color: #9a8c98;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-right: 10px;
+  }
+
+  .document-link {
+    color: #d65460;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 4px;
+    transition: all 0.3s;
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  .document-link:hover {
+    background-color: #4a4e69;
+    color: white;
+    text-decoration: underline;
+  }
+
+  .documents {
+    display: inline-block;
+  }
+
+  @media (max-width: 600px) {
+    .brain-health-container {
+      padding: 15px;
+    }
+
+    .header h1 {
+      font-size: 1.8em;
+    }
+
+    .content {
+      padding: 15px;
+    }
+  }
+</style>

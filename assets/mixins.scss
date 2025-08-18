@@ -1,0 +1,64 @@
+@mixin tg(
+  $font-size: 12px,
+  $font-weight: normal,
+  $line-height: normal,
+  $letter-spacing: normal,
+  $family: 'Roboto'
+) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  font-family: $family;
+}
+
+@mixin scrollbar {
+  // ADD: Поддержку Firefox
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #ececec;
+    border-radius: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #dbdbdb;
+  }
+}
+@mixin huge-media {
+  @media screen and (max-width: 2050px) {
+    @content;
+  }
+}
+
+@mixin high-media {
+  @media screen and (max-width: 1460px) {
+    @content;
+  }
+}
+
+@mixin high-medium-media {
+  @media screen and (max-width: 1360px) {
+    @content;
+  }
+}
+
+@mixin medium-media {
+  @media screen and (max-width: 1145px) {
+    @content;
+  }
+}
+
+@mixin small-medium-media {
+  @media screen and (max-width: 930px) {
+    @content;
+  }
+}
+
+@mixin small-media {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
