@@ -93,6 +93,16 @@
             >Учебный план на базе среднего общего образования, 2023 г.</a
           >
         </li>
+                <li v-if="currentSpec.plan2024web">
+          <a class="ab__link" target="_blank" :href="currentSpec.plan2024web"
+            >Учебный план по специальности 2024 г</a
+          >
+        </li>
+        <li v-if="currentSpec.plan2025web">
+          <a class="ab__link" target="_blank" :href="currentSpec.plan2025web"
+            >Учебный план по специальности 2025 г</a
+          >
+        </li>
       </ul>
     </div>
     <button class="back" @click="$router.go(-1)">Назад</button>

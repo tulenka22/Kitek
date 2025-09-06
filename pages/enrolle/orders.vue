@@ -2,10 +2,7 @@
   <block-ab title="Приказы о зачислении" class="enrollment-orders">
     <common-documents-list json-path="documents/enrolle-orders.json" class="documents-list" />
     <div class="notice-container">
-      <p class="notice-text">
-        Приказ о зачислении на внебюджетную форму обучения будет опубликован
-        <strong>19 августа 2025 года</strong>.
-      </p>
+
       <p class="notice-text highlight">
         На заочное отделение приём документов продолжается — успей подать!
       </p>

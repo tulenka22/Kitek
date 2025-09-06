@@ -185,6 +185,7 @@
       <a v-if="spec.plan202411z" :href="spec.plan202411z" target="_blank" class="ab__p ab__link">
         Учебный план (11 классов заочное) 2024 г.
       </a>
+      
       <p class="ab__p" v-if="spec.plan == ''">Учебный план</p>
       <p class="ab__p" v-if="spec.eduprocess == ''">Календарный учебный график</p>
       <a v-if="spec.eduprocess" :href="spec.eduprocess" target="_blank" class="ab__p ab__link">
