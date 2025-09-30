@@ -273,6 +273,33 @@
       <span class="lightbox__close" @click.stop="showImg = false">&times;</span>
     </div>
 
+    <div class="h2-container">
+      <h2 class="h2-zagolovok">Видео</h2>
+    </div>
+    <p class="ab__p ab__p--pointer" @click="showSpo = !showSpo">
+      <icon-wrapper class="icon-tap" width="20" height="24"><icon-tapclick /></icon-wrapper>
+      <b> Показать/скрыть видео</b>
+    </p>
+    <block-ab v-show="showSpo" class="imgblock">
+      <div class="">
+        <div class="video-wrapper">
+          <div class="video-container">
+            <video class="ab__video" controls playsinline>
+              <source src="/video/prepodtryd.mp4" type="video/mp4" />
+              Ваш браузер не поддерживает видео
+            </video>
+          </div>
+
+          <div class="video-caption">
+            <p class="ab__p">
+              <b>Савельева Ю.С.</b>, руководитель отдела содействия трудоустройству и взаимодействия
+              с работодателями
+            </p>
+          </div>
+        </div>
+      </div>
+    </block-ab>
+
     <!-- 
     <p class="ab__p" @click=";(kk = !kk), (visible = false)">
       <icon-wrapper class="icon-tap" width="20" height="24"><icon-tapclick /></icon-wrapper
@@ -304,6 +331,7 @@ export default {
   data() {
     return {
       showCareer: false,
+      showSpo: false,
       showSamo: false,
       opk: false,
       showImg: false,
@@ -341,6 +369,91 @@ export default {
 </script>
 
 <style scoped lang="scss">
+// стили видео
+.video-wrapper {
+  max-width: 800px;
+
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* Соотношение сторон 16:9 */
+  background: #000;
+}
+
+.ab__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+.video-caption {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.ab__p {
+  font-size: 18px;
+  margin-bottom: 0;
+  color: #2c3e50;
+}
+
+.ab__p b {
+  color: #3498db;
+  font-weight: 600;
+}
+
+/* Стили для элементов управления видео */
+.ab__video::-webkit-media-controls-panel {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.ab__video::-webkit-media-controls-play-button,
+.ab__video::-webkit-media-controls-volume-slider,
+.ab__video::-webkit-media-controls-timeline {
+  filter: invert(1); /* Делаем элементы управления белыми */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .video-wrapper {
+    border-radius: 8px;
+  }
+
+  .video-caption {
+    padding: 15px;
+  }
+
+  .ab__p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .ab__p {
+    font-size: 15px;
+  }
+}
+// конец стилей видео
 .opk-employment-info {
   font-family: Arial, sans-serif;
   line-height: 1.6;

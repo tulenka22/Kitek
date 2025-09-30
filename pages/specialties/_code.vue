@@ -66,8 +66,134 @@
 
     <div class="ab__p" v-if="currentSpec.plan != ''">
       <ul class="ab__list">
+        <!-- экскурсионные услуги -->
+
+        <li v-if="currentSpec.gos">
+          <a class="ab__link" target="_blank" :href="currentSpec.gos">Гостиничные услуги, 2025г</a>
+        </li>
+        <li v-if="currentSpec.ekz">
+          <a class="ab__link" target="_blank" :href="currentSpec.ekz"
+            >Экскурсионные услуги, 2025г</a
+          >
+        </li>
+
+        <li v-if="currentSpec.gos1">
+          <a class="ab__link" target="_blank" :href="currentSpec.gos1"
+            >Образовательная программа гостиничные услуги, 2025г</a
+          >
+        </li>
+        <li v-if="currentSpec.ekz1">
+          <a class="ab__link" target="_blank" :href="currentSpec.ekz1"
+            >Образовательная программа экскурсионные услуги, 2025г</a
+          >
+        </li>
+
+        <li v-if="currentSpec.gos2">
+          <a class="ab__link" target="_blank" :href="currentSpec.gos2"
+            >Учебный план гостиничные услуги</a
+          >
+        </li>
+        <li v-if="currentSpec.ekz2">
+          <a class="ab__link" target="_blank" :href="currentSpec.ekz2"
+            >Учебный план экскурсионные услуги</a
+          >
+        </li>
+
+        <li v-if="currentSpec.gos3">
+          <a class="ab__link" target="_blank" :href="currentSpec.gos3"
+            >Образовательная программа гостиничные услуги, 2025г</a
+          >
+        </li>
+        <li v-if="currentSpec.ekz3">
+          <a class="ab__link" target="_blank" :href="currentSpec.ekz3"
+            >Образовательная программа экскурсионные услуги, 2025г</a
+          >
+        </li>
+
         <!--<b>Учебный план:</b>-->
 
+        <li v-if="currentSpec.baza9">
+          <a class="ab__link" target="_blank" :href="currentSpec.baza9"
+            >Учебный план на базе основного общего образования, 2025 г.</a
+          >
+        </li>
+        <li v-if="currentSpec.baza11">
+          <a class="ab__link" target="_blank" :href="currentSpec.baza11"
+            >Учебный план на базе среднего общего образования, 2025 г.</a
+          >
+        </li>
+
+        <li v-if="currentSpec.plan2025web">
+          <a class="ab__link" target="_blank" :href="currentSpec.plan2025web"
+            >Учебный план 2025 г</a
+          >
+        </li>
+        <li v-if="currentSpec.z">
+          <a class="ab__link" target="_blank" :href="currentSpec.z">Учебный план, 2025г</a>
+        </li>
+        <li v-if="currentSpec.zz">
+          <a class="ab__link" target="_blank" :href="currentSpec.zz">Учебный план</a>
+        </li>
+
+        <li v-if="currentSpec.dev">
+          <a class="ab__link" target="_blank" :href="currentSpec.dev">Учебный план (9 классов)</a>
+        </li>
+        <li v-if="currentSpec.odi">
+          <a class="ab__link" target="_blank" :href="currentSpec.odi">Учебный план (11 классов)</a>
+        </li>
+
+        <li v-if="currentSpec.tov9">
+          <a class="ab__link" target="_blank" :href="currentSpec.tov9">Товароведение (9 классов)</a>
+        </li>
+        <li v-if="currentSpec.tov11">
+          <a class="ab__link" target="_blank" :href="currentSpec.tov11"
+            >Товароведение (11 классов)</a
+          >
+        </li>
+        <!-- 
+        оБРАЗОВАТЕЛЬНАЯ ПРОГРАММА -->
+
+        <li v-if="currentSpec.prof">
+          <a class="ab__link" target="_blank" :href="currentSpec.prof"
+            >Образовательная программа профессионалитета, 2025 г.</a
+          >
+        </li>
+        <li v-if="currentSpec.prof2">
+          <a class="ab__link" target="_blank" :href="currentSpec.prof2"
+            >Образовательная программа профессионалитета, 2025 г.</a
+          >
+        </li>
+        <li v-if="currentSpec.zzzz">
+          <a class="ab__link" target="_blank" :href="currentSpec.zzzz"
+            >Образовательная программа, 2025г</a
+          >
+        </li>
+
+        <li v-if="currentSpec.programcoo">
+          <a class="ab__link" target="_blank" :href="currentSpec.programcoo"
+            >Образовательная программа COO</a
+          >
+        </li>
+        <li v-if="currentSpec.programcoo2">
+          <a class="ab__link" target="_blank" :href="currentSpec.programcoo2"
+            >Образовательная программа ООО</a
+          >
+        </li>
+        <li v-if="currentSpec.prof">
+          <a class="ab__link" target="_blank" :href="currentSpec.prof"
+            >Образовательная программа профессионалитета, 2025 г.</a
+          >
+        </li>
+        <li v-if="currentSpec.prof2">
+          <a class="ab__link" target="_blank" :href="currentSpec.prof2"
+            >Образовательная программа профессионалитета, 2025 г.</a
+          >
+        </li>
+        <li v-if="currentSpec.plan2025web2">
+          <a class="ab__link" target="_blank" :href="currentSpec.plan2025web2"
+            >Образовательная программа, 2025 г.</a
+          >
+        </li>
         <li v-if="currentSpec.plan24">
           <a class="ab__link" target="_blank" :href="currentSpec.plan24"
             >Образовательная программа профессионалитета {{ currentSpec.nameprof }}</a
@@ -78,10 +204,30 @@
             >Образовательная программа профессионалитета {{ currentSpec.nameprof2 }}
           </a>
         </li>
-        <li v-if="currentSpec.plan">
-          <a class="ab__link" target="_blank" :href="currentSpec.plan"
-            >Учебный план по специальности 2023 г</a
+        <li v-if="currentSpec.zzz">
+          <a class="ab__link" target="_blank" :href="currentSpec.zzz">Образовательная программа</a>
+        </li>
+        <li v-if="currentSpec.zzz2">
+          <a class="ab__link" target="_blank" :href="currentSpec.zzz">Образовательная программа</a>
+        </li>
+
+        <!-- OLD PLAN 2024 -->
+
+        <li v-if="currentSpec.plan2024web">
+          <a class="ab__link" target="_blank" :href="currentSpec.plan2024web"
+            >Учебный план по специальности 2024 г</a
           >
+        </li>
+        <li v-if="currentSpec.plan2024web2">
+          <a class="ab__link" target="_blank" :href="currentSpec.plan2024web2"
+            >Учебный план по специальности 2024 г</a
+          >
+        </li>
+
+        <!-- OLD PLAN 2023 -->
+
+        <li v-if="currentSpec.planll">
+          <a class="ab__link" target="_blank" :href="currentSpec.planll">Учебный план 2023 г</a>
         </li>
         <li v-if="currentSpec.planIX">
           <a class="ab__link" target="_blank" :href="currentSpec.planIX"
@@ -91,16 +237,6 @@
         <li v-if="currentSpec.planXI">
           <a class="ab__link" target="_blank" :href="currentSpec.planXI"
             >Учебный план на базе среднего общего образования, 2023 г.</a
-          >
-        </li>
-                <li v-if="currentSpec.plan2024web">
-          <a class="ab__link" target="_blank" :href="currentSpec.plan2024web"
-            >Учебный план по специальности 2024 г</a
-          >
-        </li>
-        <li v-if="currentSpec.plan2025web">
-          <a class="ab__link" target="_blank" :href="currentSpec.plan2025web"
-            >Учебный план по специальности 2025 г</a
           >
         </li>
       </ul>

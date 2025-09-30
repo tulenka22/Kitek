@@ -77,7 +77,7 @@
       <p class="ab__p">Форма обучения: {{ spec.formOfEducation }}</p>
       <p class="ab__p">Срок обучения: {{ spec.period }}</p>
       <a v-if="spec.plan21" :href="spec.plan21" target="_blank" class="ab__p ab__link">
-        Учебный план 2021 г.
+        Учебный план, 2021 г.
       </a>
       <a v-if="spec.planIX21" :href="spec.planIX21" target="_blank" class="ab__p ab__link">
         Учебный план (9 классов) 2021 г.
@@ -86,7 +86,7 @@
         Учебный план (11 классов) 2021 г.
       </a>
       <a v-if="spec.plan" :href="spec.plan" target="_blank" class="ab__p ab__link">
-        Учебный план 2023 г.
+        Учебный план, 2023 г.
       </a>
       <a v-if="spec.planIX" :href="spec.planIX" target="_blank" class="ab__p ab__link">
         Учебный план (9 классов) 2023 г.
@@ -98,7 +98,7 @@
         Учебный план (заочное) 2023 г.
       </a>
       <a v-if="spec.plan2024" :href="spec.plan2024" target="_blank" class="ab__p ab__link">
-        Учебный план 2024 г.
+        Учебный план, 2024 г.
       </a>
       <a v-if="spec.plan20249" :href="spec.plan20249" target="_blank" class="ab__p ab__link">
         Учебный план (9 классов) 2024 г.
@@ -113,8 +113,15 @@
         Учебный план (11 классов заочное) 2024 г.
       </a>
       <a v-if="spec.plan20242" :href="spec.plan20242" target="_blank" class="ab__p ab__link">
-        Учебный план (2024) 2024 г.
+        Учебный план, 2024 г.
       </a>
+
+
+
+
+
+
+
       <p class="ab__p" v-if="spec.plan == ''">Учебный план</p>
       <p class="ab__p" v-if="spec.eduprocess == ''">Календарный учебный график</p>
       <a v-if="spec.eduprocess" :href="spec.eduprocess" target="_blank" class="ab__p ab__link">
@@ -185,6 +192,10 @@
       <a v-if="spec.plan202411z" :href="spec.plan202411z" target="_blank" class="ab__p ab__link">
         Учебный план (11 классов заочное) 2024 г.
       </a>
+
+
+
+
       
       <p class="ab__p" v-if="spec.plan == ''">Учебный план</p>
       <p class="ab__p" v-if="spec.eduprocess == ''">Календарный учебный график</p>

@@ -22,6 +22,7 @@
           <nuxt-link to="/specialties" class="header__link">Специальности</nuxt-link>
           <nuxt-link to="/professional" class="header__link">Профессионалитет</nuxt-link>
           <nuxt-link to="/gordostkitek" class="header__link">Гордость КИТЭК</nuxt-link>
+          <nuxt-link to="/spo85" class="header__link">85 лет системе СПО</nuxt-link>
           <!-- <nuxt-link to="/professional" class="header__link"
             ><img alt="Logo" src="/img/professional/ЛогоПроф2024.png" class="logo_prof"
           /></nuxt-link> -->
@@ -142,6 +143,13 @@
         </nuxt-link>
         <nuxt-link @click.native="hamburgerState = false" to="/gordostkitek" class="flat">
           <h2 class="flat__title">Гордость КИТЭК</h2>
+          <span />
+          <IconWrapper height="24" width="24" class="flat__icon">
+            <IconArrowDown />
+          </IconWrapper>
+        </nuxt-link>
+        <nuxt-link @click.native="hamburgerState = false" to="/spo85" class="flat">
+          <h2 class="flat__title">85 лет системе СПО</h2>
           <span />
           <IconWrapper height="24" width="24" class="flat__icon">
             <IconArrowDown />
