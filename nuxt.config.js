@@ -88,6 +88,7 @@ export default {
       const nn = news.map((n) => `/news/${n.id}`)
       const ss = specialties.map((s) => `/specialties/${s.code}`)
       return [...nn, ...ss]
+      // return [...ss]
     },
   },
 

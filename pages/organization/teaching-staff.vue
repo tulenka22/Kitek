@@ -144,7 +144,7 @@ export default {
           img: '/img/organization/teaching-staff/Ивченко Т.П.png',
         },
         {
-          name: 'Даниленко Ирина Сергеевна',
+          name: 'Стацюк Ольга Валерьевна',
           position: 'Главный бухгалтер',
           phone: '8 (3812) 68-07-64',
           mail: 'tradeconomy@mail.ru',

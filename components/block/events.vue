@@ -1,7 +1,7 @@
 <template>
   <div class="events">
     <div>
-      <!-- <AppBlock
+      <AppBlock
         :content-style="{
           padding: '24px',
           display: 'flex',
@@ -11,37 +11,37 @@
         <div class="opendoors">
           <div class="events__text">
             <h2 class="ab__subtitle doors">
-              <b>
+              <!-- <b>
                 Приглашаем учащихся 8-11 классов, их родителей (законных представителей),
                 преподователей общеобразовательных организаций на
-              </b>
-              <b red>"Единый день открытых дверей", </b>
+              </b> -->
+              <!-- <b red>"Единый день открытых дверей" </b> -->
 
               <b red
-                >приглашаем вас на<br />
-                «День открытых дверей»</b
+                >Приглашаем вас на<br />
+                «Единый День открытых дверей»</b
               >
 
-              <b red>который состоится по адресу: </b>
+              <!-- <b red>который состоится по адресу: </b>
               <b red>ул. 27-я Северная, 69</b>
               <b red>12 АПРЕЛЯ 2025 В 10:00</b>
-              <b red>20.04.2024 в 10:00</b>
+              <b red>20.04.2024 в 10:00</b> -->
             </h2>
             <br />
             <br />
-            <a href="/data/news/Порядок проведения.pdf" class="ab__link" target="_blank"
+            <!-- <a href="/data/news/Порядок проведения.pdf" class="ab__link" target="_blank"
               >Порядок проведения и ФИО кураторов групп</a
-            >
+            >  -->
           </div>
           <div class="events__text">
             <img
               alt="День открытых дверей"
-              src="/img/organization/0e9d0180-e343-40de-8d39-d14ab06d4ab3.webp"
+              src="/img/organization/photo_2025-10-27_13-09-16.jpg"
               class="openDay" />
             <h2 class="ab__subtitle doors"></h2>
           </div>
         </div>
-      </AppBlock> -->
+      </AppBlock>
 
       <!-- <AppBlock
         :content-style="{
@@ -179,14 +179,14 @@
             </div>
             <div class="kitek-counter" ref="counter">
               <div class="counter-item">
-                <div class="counter-number">15</div>
-                <div class="counter-label">августа 13:00</div>
+                <div class="counter-number">11</div>
+                <div class="counter-label">Апреля 10:00</div>
               </div>
               <div class="counter-item">
-                <div class="counter-number">2025</div>
+                <div class="counter-number">2026</div>
                 <div class="counter-label">года</div>
               </div>
-              <div class="counter-description">Завершится прием документов</div>
+              <div class="counter-description">Единый день открытых дверей</div>
             </div>
           </div>
 

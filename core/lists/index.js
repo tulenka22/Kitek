@@ -82,7 +82,7 @@ export const organization = [
   },
   {
     url: '/organization/faq',
-    text: '"Часто задаваемые вопросы"',
+    text: '«Часто задаваемые вопросы»',
   },
 ]
 

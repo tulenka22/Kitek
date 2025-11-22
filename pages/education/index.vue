@@ -51,13 +51,13 @@
         ></a>
       </li>
       <li>
-        <a
+        <!-- <a
           class="ab__link"
           target="_blank"
           href="/data/educational/Результаты приемной комиссии 2023.pdf">
           Результаты приемной комиссии
           <icon-wrapper class="ab__icon" width="12" height="16"><icon-document /></icon-wrapper
-        ></a>
+        ></a> -->
       </li>
     </ul>
     <h2 class="ab__subtitle">
@@ -192,11 +192,6 @@
       <a v-if="spec.plan202411z" :href="spec.plan202411z" target="_blank" class="ab__p ab__link">
         Учебный план (11 классов заочное) 2024 г.
       </a>
-
-
-
-
-      
       <p class="ab__p" v-if="spec.plan == ''">Учебный план</p>
       <p class="ab__p" v-if="spec.eduprocess == ''">Календарный учебный график</p>
       <a v-if="spec.eduprocess" :href="spec.eduprocess" target="_blank" class="ab__p ab__link">

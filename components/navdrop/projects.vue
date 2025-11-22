@@ -16,14 +16,16 @@ export default {
             'Федеральный проект «Содействие занятости» Национального проекта «Демография»'
           ),
           createLink('/projects/demo-ekzam', 'Демонстрационный экзамен'),
-          createLink('/projects/ticket', 'Билет в будущее')
+          createLink('/projects/ticket', 'Билет в будущее'),
+          createLink('/projects/inko', 'РИП-ИнКО')
         ),
         createColumn(
           '',
-          createLink('/projects/inko', 'РИП-ИнКО'),
+          
           createLink('/projects/workshop', 'Мастерские'),
           createLink('/projects/soo', 'Внедрение стандарта среднего общего образования'),
-          createLink('/professional', 'ФП «Профессионалитет»')
+          createLink('/professional', 'ФП «Профессионалитет»'),
+          createLink('/projects/predp', 'Учебно-производственный комплекс')
         ),
       ],
     }

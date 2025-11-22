@@ -80,7 +80,30 @@
   margin-top: 10px;
   display: flex;
   align-items: flex-start;
-  @media screen and (max-width: 1060px) {
+}
+
+/* Минимальное полноэкранное открытие изображений */
+.img-single__minimg {
+  cursor: zoom-in;
+  border-radius: 10px;
+}
+
+.img-single__minimg:active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  cursor: zoom-out;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1060px) {
+  .img-container {
     display: block;
     align-items: stretch;
   }

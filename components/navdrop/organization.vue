@@ -51,8 +51,8 @@ export default {
           createLink('/organization/mentor', 'Наставничество '),
           createLink('/organization/fin-eco-activities', 'Финансово-хозяйственная деятельность'),
           createLink('/organization/transfer', 'Вакантные места для приема (перевода) обучающихся'),
-          createLink('/organization/dostijenia', '"Наши Достижения"'),
-          createLink('/organization/faq', '"Часто задаваемые вопросы"')
+          createLink('/organization/dostijenia', '«Наши Достижения»'),
+          createLink('/organization/faq', '«Часто задаваемые вопросы»')
         ),
       ],
     }

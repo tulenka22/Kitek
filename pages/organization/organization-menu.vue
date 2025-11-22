@@ -57,8 +57,8 @@
         Вакантные места для приема (перевода) обучающихся
       </nuxt-link>
 
-      <nuxt-link to="/organization/dostijenia" class="menu__link"> "Наши Достижения" </nuxt-link>
-      <nuxt-link to="/organization/faq" class="menu__link"> "Часто задаваемые вопросы" </nuxt-link>
+      <nuxt-link to="/organization/dostijenia" class="menu__link"> «Наши Достижения» </nuxt-link>
+      <nuxt-link to="/organization/faq" class="menu__link"> «Часто задаваемые вопросы»</nuxt-link>
     </nav>
   </block-ab>
 </template>

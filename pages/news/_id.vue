@@ -12,6 +12,14 @@
 <script>
 import { loadDynamic } from '~/core/helpers/file'
 export default {
+  async asyncData({ params, error }) {
+    const newsJson = JSON.parse(await loadDynamic('dynamic/news/news.json'))
+    const newsItem = newsJson.find((item) => item.id == params.id)
+
+    return {
+      newsItem,
+    }
+  },
   data() {
     return {
       nameNews: [],
@@ -32,6 +40,25 @@ export default {
     id() {
       return this.$route.params.id
     },
+  },
+  head() {
+    return {
+      title: this.newsItem.title,
+      meta: [
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: this.newsItem.keywords,
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.newsItem.description,
+        },
+        { hid: 'title', name: 'title', content: this.newsItem.title },
+        // Other meta tags
+      ],
+    }
   },
 }
 </script>

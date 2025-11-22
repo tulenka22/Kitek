@@ -127,10 +127,31 @@
         </p>
       </div>
       <div>
-        <p class="ab__p"><b red>ГРАФИК УЧЕБНОГО ПРОЦЕССА:</b></p>
-        <ul class="ab__list" v-for="spec in specialtes" :key="spec.eduprocess">
-          <a :href="spec.eduprocess" target="_blank" class="ab__p ab__link">{{ spec.name}} </a>
-        </ul>
+        <p class="ab__p"><b red>ГРАФИК УЧЕБНОГО ПРОЦЕССА:</b></p><br>
+        <div class="doc_spec">
+          <a id="doc_a" href="/data/docgraf/ИСП.pdf">09.02.07 ИНФОРМАЦИОННЫЕ СИСТЕМЫ И ПРОГРАММИРОВАНИЕ (КВАЛИФИКАЦИЯ – ПРОГРАММИСТ)</a>
+          <a  id="doc_a" href="/data/docgraf/ИСР.pdf">09.02.07 ИНФОРМАЦИОННЫЕ СИСТЕМЫ И ПРОГРАММИРОВАНИЕ (КВАЛИФИКАЦИЯ – РАЗРАБОТЧИК WEB И МУЛЬТИМЕДИЙНЫХ ПРИЛОЖЕНИЙ)</a>
+          <a  id="doc_a" href="/data/docgraf/Юриспруденция.pdf">40.02.04 ЮРИСПРУДЕНЦИЯ</a>
+          <a  id="doc_a" href="/data/docgraf/Бух.pdf">38.02.01 ЭКОНОМИКА И БУХГАЛТЕРСКИЙ УЧЕТ (ПО ОТРАСЛЯМ)</a>
+          <a  id="doc_a" href="/data/docgraf/ТГ.pdf">43.02.16 ТУРИЗМ И ГОСТЕПРИИМСТВО</a>
+          <a  id="doc_a" href="/data/docgraf/ГД.pdf">43.02.14 ГОСТИНИЧНОЕ ДЕЛО</a>
+          <a  id="doc_a" href="/data/docgraf/ТДК.pdf">38.02.08 ТОРГОВОЕ ДЕЛО (направленность - коммерция)</a>
+          <a  id="doc_a" href="/data/docgraf/ТДТ.pdf">38.02.08 ТОРГОВОЕ ДЕЛО (направленность - ТОВАРОВЕДЕНИЕ)</a>
+          <a  id="doc_a" href="/data/docgraf/ПКД.pdf">43.02.15 ПОВАРСКОЕ И КОНДИТЕРСКОЕ ДЕЛО</a>
+          <a  id="doc_a" href="/data/docgraf/ПК.pdf">43.01.09 ПОВАР, КОНДИТЕР</a>
+          <a  id="doc_a" href="/data/docgraf/МС.pdf">26.01.09 МОТОРИСТ СУДОВОЙ</a>
+          <a  id="doc_a" href="/data/docgraf/ЭСУ.pdf">26.02.05 ЭКСПЛУАТАЦИЯ СУДОВЫХ ЭНЕРГЕТИЧЕСКИХ УСТАНОВОК</a>
+          <a  id="doc_a" href="/data/docgraf/.pdf"></a>
+          <a  id="doc_a" href="/data/docgraf/.pdf"></a>
+        </div>
+
+        
+        
+        
+        
+        
+        
+
       </div>
   </block-ab>
 </template>
@@ -155,6 +176,18 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+.doc_spec {
+  text-decoration: underline;
+}
+
+.doc_spec a {
+  display: block;
+}
+
+ #doc_a {
+  margin: 20px
+}
 
 .cont-text{
   float: left;

@@ -3,7 +3,7 @@
     <common-documents-list json-path="documents/sport-club.json" />
 
     <div class="ab__video">
-      <video class="ab__video" controls>
+      <video class="ab__video" width="50%" height="50%" controls>
         <source src="/video/презентация на сайт ССК СТАРТ 2024.mp4" type="video/mp4" />
         Ваш браузер не поддерживает видео
       </video>

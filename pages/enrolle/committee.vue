@@ -374,7 +374,7 @@
     <div class="table-center">
       <p class="ab__p" style="cursor: pointer" v-on:click="table = !table">
         <icon-wrapper class="icon-tap" width="20" height="24"><icon-tapclick /></icon-wrapper
-        ><b red-prim>Проходной балл 2024</b>
+        ><b red-prim>Проходной балл 2025</b>
       </p>
       <table class="a-table">
         <thead v-on:click="table = !table">
@@ -405,11 +405,11 @@
               38.02.01 Экономика и бухгалтерский учет (по отраслям)
             </td>
             <td class="a-table__cell a-table__cell-8 a-table__cell-center">9 классов</td>
-            <td class="a-table__cell a-table__cell-8 a-table__cell-center">3,72</td>
+            <td class="a-table__cell a-table__cell-8 a-table__cell-center">4,05</td>
           </tr>
           <tr>
             <td class="a-table__cell a-table__cell-8 a-table__cell-center">11 классов</td>
-            <td class="a-table__cell a-table__cell-8 a-table__cell-center">3,82</td>
+            <td class="a-table__cell a-table__cell-8 a-table__cell-center">3,53</td>
           </tr>
           <tr>
             <td class="a-table__cell a-table__cell-8" rowspan="2">
@@ -420,7 +420,7 @@
           </tr>
           <tr>
             <td class="a-table__cell a-table__cell-8 a-table__cell-center">11 классов</td>
-            <td class="a-table__cell a-table__cell-8 a-table__cell-center">3,68</td>
+            <td class="a-table__cell a-table__cell-8 a-table__cell-center">3,32</td>
           </tr>
           <tr></tr>
           <tr>
@@ -445,13 +445,21 @@
           <tr>
             <td class="a-table__cell a-table__cell-8">43.01.09 Повар, кондитер</td>
             <td class="a-table__cell a-table__cell-8 a-table__cell-center">9 классов</td>
-            <td class="a-table__cell a-table__cell-8 a-table__cell-center">3,63</td>
+            <td class="a-table__cell a-table__cell-8 a-table__cell-center">3,53</td>
+          </tr>
+
+          <tr>
+            <td class="a-table__cell a-table__cell-8" rowspan="2">
+              43.02.15 Поварское и кондитерское дело
+            </td>
+            <td class="a-table__cell a-table__cell-8 a-table__cell-center">9 классов</td>
+            <td class="a-table__cell a-table__cell-8 a-table__cell-center">3,79</td>
           </tr>
           <tr>
-            <td class="a-table__cell a-table__cell-8">43.02.15 Поварское и кондитерское дело</td>
-            <td class="a-table__cell a-table__cell-8 a-table__cell-center">9 классов</td>
-            <td class="a-table__cell a-table__cell-8 a-table__cell-center">3,83</td>
+            <td class="a-table__cell a-table__cell-8 a-table__cell-center">11 классов</td>
+            <td class="a-table__cell a-table__cell-8 a-table__cell-center">3,50</td>
           </tr>
+
           <tr>
             <td class="a-table__cell a-table__cell-8">
               43.02.16 Туризм и гостеприимство (направленность: Гостиничные услуги)
@@ -470,7 +478,7 @@
           <tr>
             <td class="a-table__cell a-table__cell-8">26.01.09 Моторист судовой</td>
             <td class="a-table__cell a-table__cell-8 a-table__cell-center">9 классов</td>
-            <td class="a-table__cell a-table__cell-8 a-table__cell-center">3,16</td>
+            <td class="a-table__cell a-table__cell-8 a-table__cell-center">3,06</td>
           </tr>
           <tr>
             <td class="a-table__cell a-table__cell-8">
