@@ -39,7 +39,7 @@ export default {
 <style scoped lang="scss">
 .block {
   @include scrollbar;
-  padding: 0 0 32px 0;
+  padding: 0 0 0 0;
   &__wrapper {
     border-radius: $default-border-radius;
     box-shadow: $control-shadow;

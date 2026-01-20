@@ -13,7 +13,9 @@
     }">
     <BlockSlider />
     <section class="page__content">
+      <EventsRwo />
       <BlockEvents />
+      <BannerMain />
       <BlockNews />
       <BlockSpecialties />
       <BlockProjects />
@@ -24,7 +26,14 @@
 </template>
 
 <script>
+import BannerMain from '~/components/block/BannerMain.vue'
+import EventsRwo from '~/components/block/EventsRwo.vue'
+
 export default {
+  components: {
+    EventsRwo,
+    BannerMain,
+  },
   data() {
     return {
       isActiveTextSizeMedium: false,
