@@ -118,7 +118,12 @@
 
 
 
-
+      <a v-if="spec.ttg11" :href="spec.ttg11" target="_blank" class="ab__p ab__link">
+        РПВ воспитания 2024 г.
+      </a>
+      <a v-if="spec.tdd11" :href="spec.tdd11" target="_blank" class="ab__p ab__link">
+        РПВ воспитания 2024 г.
+      </a>
 
 
 
@@ -197,6 +202,12 @@
       <a v-if="spec.eduprocess" :href="spec.eduprocess" target="_blank" class="ab__p ab__link">
         Календарный учебный график
       </a>
+            <a v-if="spec.yyou6" :href="spec.yyou6" target="_blank" class="ab__p ab__link">
+        РПВ воспитания 2024 г.
+      </a>
+        
+
+
       <a
         v-if="spec.educationProgram"
         :href="spec.educationProgram"

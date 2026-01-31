@@ -126,14 +126,14 @@
           v-on:click="visibleAwards = !visibleAwards" />
       </swiper-slide>
     </swiper>
-    <h2 class="ab__subtitle">Новости:</h2>
+    <!-- <h2 class="ab__subtitle">Новости:</h2>
     <div class="news">
       <EntitiesNewCard
         v-for="(n, nIdx) of news"
         :key="nIdx"
         :instance="n"
         v-if="n.teg == 'ticket'" />
-    </div>
+    </div> -->
   </block-ab>
 </template>
 
