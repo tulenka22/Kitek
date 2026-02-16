@@ -100,7 +100,7 @@
             </div>
             <div class="kitek-counter" ref="counter">
               <div class="counter-item">
-                <div class="counter-number">11</div>
+                <div class="counter-number">18</div>
                 <div class="counter-label">Апреля 10:00</div>
               </div>
               <div class="counter-item">

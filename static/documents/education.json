@@ -1,0 +1,32 @@
+  [
+  {
+    "id": 1,
+    "title": "Информационные системы и программирование",
+    "group": "ФП",
+    "formOfEducation": "Очная",
+    "period": "3 года 10 месяцев",
+    "documents": [
+      {
+        "name": "Аттестат",
+        "url": "/data/educational/attestat.pdf"
+      },
+      {
+        "name": "Паспорт",
+        "url": "/data/educational/passport.pdf"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Экономика и бухгалтерский учет",
+    "group": "Other",
+    "formOfEducation": "Заочная",
+    "period": "2 года 10 месяцев",
+    "documents": [
+      {
+        "name": "Аттестат",
+        "url": "/data/educational/attestat.pdf"
+      }
+    ]
+  }
+]

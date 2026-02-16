@@ -2,7 +2,7 @@
   <block-ab title="Воспитательная деятельность">
     <img alt="SPS Logo" src="/img/educational/Logo-SPS.webp" class="ab__img" />
     <p class="ab__p">
-      <b> Рабочие программы воспитания </b>
+      <b> Рабочие программы воспитания</b>
     </p>
     <ul class="ab__list">
       <li class="ab__link" v-for="(education, id) of educations" :key="id">
@@ -378,17 +378,14 @@ export default {
           url: '/data/educational/26.02.05 Эксплуатация судовых энергетических установок.pdf',
         },
         {
-          name: '26.01.10 Механик маломерного судна',
-          url: '/data/educational/26.01.10 Механик маломерного судна.pdf',
-        },
-        {
           name: '26.01.09 Моторист судовой',
           url: '/data/educational/26.01.09 Моторист судовой.pdf',
         },
         {
           name: '09.02.07 Информационные системы и программирование',
           url: '/data/educational/09.02.07 Информационные системы и программирование.pdf',
-        },
+        }
+
       ],
     }
   },

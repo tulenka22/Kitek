@@ -1,203 +1,336 @@
 <template>
   <block-ab title="Билет в будущее">
+    <!-- Слайдер наград -->
     <EntitiesImgScreen :instance="visibleAwards" :images="awards" :separatePage="false" />
-    <img alt="Логотип билет в будущие" src="/img/educational/Logo-BvB.webp" class="ab__img" />
+
+    <img alt="Логотип Билет в будущее" src="/img/educational/Logo-BvB.webp" class="ab__img" />
+
     <p class="ab__p">
-      Колледж стал площадкой для проведения практических мероприятий в рамках федерального проекта
-      по ранней профессиональной ориентации учащихся 6-11-х классов общеобразовательных организаций
-      «Билет в будущее» в 2022 году.
-    </p>
-    <p class="ab__p">
-      Проект по ранней профессиональной ориентации учащихся 6-11 классов общеобразовательных
-      организаций «Билет в будущее» решает задачу повышения осознанности школьников в выборе
-      профессии. В рамках проекта школьники участвуют в профессиональных пробах, где имеют
-      возможность на практике попробовать свои силы в интересных для себя профессиях: визуальный
-      мерчандайзер, программист, повар-кондитер и предприниматель малого бизнеса.
-    </p>
-    <p class="ab__p">
-      В рамках практических мероприятий высока роль наставника – именно он знакомит подростка с
-      основной информацией о профессиональной области, под его руководством участник выполняет
-      заданную рабочую операцию, получает оценку результата и обратную связь с рекомендациями по
-      развитию. Выделяется три возрастных категории участников: 6-7, 8-9 и 10-11 классы.
-    </p>
-    <p class="ab__p">
-      В ходе профессиональной пробы участники решают одну или несколько практических задач и
-      выполняют реальные рабочие операции, относящиеся к конкретной профессиональной области. Проба
-      подразумевает работу участников с материалами, инструментами, оборудованием, программным
-      обеспечением, без игровой адаптации и в условиях, максимально приближенных к реальным.
-    </p>
-    <p class="ab__p">
-      В ходе пробы участники взаимодействуют с наставником, являющимся носителем профессиональных
-      компетенций, получая от него теоретические знания, практические рекомендации, обратную связь и
-      оценку по итогам пробы.
+      Колледж является площадкой по организации и проведению практических мероприятий в очном
+      формате по ранней профессиональной ориентации учащихся 8-11-х классов общеобразовательных
+      организаций «Билет в будущее».
     </p>
 
     <p class="ab__p">
-      <b>Координатор площадки: Юрьева Елена Георгиевна</b>
-      <a href="tel:8(3812) 68-07-82"> т. 8(3812) 68-07-82,</a> <b> e-mail:</b>
-      <a href="mailto:tradeconomy@mail.ru">tradeconomy@mail.ru </a>
+      Проект Единая модель профориентации «Билет в будущее» реализуется в рамках федерального
+      проекта «Профессионалитет» национального проекта «Молодежь и дети» и направлен на формирование
+      у обучающихся 6–11 классов готовности к профессиональному самоопределению.
     </p>
-    <h2 class="ab__subtitle">Наставники:</h2>
+
     <p class="ab__p">
-      <b>Профессиональное направление: "Повар, кондитер" (Комфортная среда):</b>
+      В ходе мероприятий школьники знакомятся с реальными условиями профессиональной деятельности,
+      выполняют практические задания, работают с оборудованием, программным обеспечением и получают
+      консультации от наставников — представителей соответствующих профессий.
     </p>
-    <ul class="ab__list">
-      <li>Федорова Галина Николаевна</li>
-      <li>Подольская Тамара Васильевна</li>
-      <li>Кузьменкина Наталья Александровна</li>
-    </ul>
-    <p class="ab__p">
-      <b>Профессиональное направление: "Предприниматель малого бизнеса" (Деловая среда): </b>
-    </p>
-    <ul class="ab__list">
-      <li>Покутная Виктория Александровна</li>
-      <li>Спирина Наталья Алексеевна</li>
-      <li>Аронова Светлана Владимировна</li>
-    </ul>
-    <p class="ab__p">
-      <b>Профессиональное направление: "Товаровед-эксперт" (Деловая среда): </b>
-    </p>
-    <ul class="ab__list">
-      <li>Ли Анна Амуровна</li>
-      <li>Степанова Галина Васильевна</li>
-    </ul>
-    <p class="ab__p">
-      <b>Профессиональное направление: "Программист" (Умная среда): </b>
-    </p>
-    <ul class="ab__list">
-      <li>Орлова Вера Михайловна</li>
-    </ul>
-    <p class="ab__p">
-      <b
-        >Профессиональное направление: "Разработчик Web и мультимедийных приложений" (Умная среда):
-      </b>
-    </p>
-    <ul class="ab__list">
-      <li>Арнольд Юлия Алексеевна</li>
-      <li>Маслова Надежда Алексеевна</li>
-      <li>Смолиженко Ольга Александровна</li>
-    </ul>
-    <p class="ab__p">
-      <b>Профессиональное направление: "Визуальный мерчандайзер" (Креативная среда): </b>
-    </p>
-    <ul class="ab__list">
-      <li>Чукаева Людмила Ивановна</li>
-    </ul>
-    <p class="ab__p">
-      <b>Профессиональное направление: "Официант" (Социальная среда):</b>
-    </p>
-    <ul class="ab__list">
-      <li>Севернюк Ирина Александровна</li>
-    </ul>
-    <p class="ab__p">
-      <b
-        >Профессиональное направление: "Специалист по гостеприимству: администратор отеля"
-        (Социальная среда):
-      </b>
-    </p>
-    <ul class="ab__list">
-      <li>Колиева Марина Александровна</li>
-    </ul>
-    <p class="ab__p">
-      <b>Профессиональное направление: "Фронтенд-разработчик" (Умная среда): </b>
-    </p>
-    <ul class="ab__list">
-      <li>Кутиков Павел Алексеевич</li>
-    </ul>
-    <p class="ab__p">
-      <b>Профессиональное направление: "Бухгалтерский учет" (Деловая среда): </b>
-    </p>
-    <ul class="ab__list">
-      <li>Кудинова Олеся Викторовна</li>
-    </ul>
-    <swiper class="slider_committe" :options="opts">
-      <swiper-slide v-for="(link, imgIdx) of img" :key="imgIdx">
-        <img class="img-single__minimg" alt="Slider-Image" :src="link" />
-      </swiper-slide>
-    </swiper>
-    <common-documents-list json-path="documents/project-ticket.json" />
-    <!-- <p class="ab__p"><b>Благодарности:</b></p> -->
-    <swiper class="slider_committe" :options="opts">
-      <swiper-slide v-for="(link, imgIdx) of awards" :key="imgIdx">
+
+    <!-- Новости проекта: сетка 2 колонки на ПК, 1 на телефоне -->
+    <h2 class="ab__subtitle ab__news-title">Новости проекта</h2>
+
+    <div class="news-grid">
+      <div
+        v-for="(item, index) in news.filter((n) => n.teg === 'ticket')"
+        :key="index"
+        class="news-card">
+        <!-- Верхняя часть новости (кликабельная) -->
+        <div class="news-header" @click="toggleNews(index)">
+          <div class="news-meta">
+            <span class="news-date">{{ item.date }}</span>
+            <h3 class="news-title">{{ item.title }}</h3>
+          </div>
+
+          <button class="news-toggle-btn" :class="{ active: activeNews === index }">
+            <span class="toggle-text">{{ activeNews === index ? 'Скрыть' : 'Подробнее' }}</span>
+            <svg
+              class="toggle-icon"
+              :class="{ rotated: activeNews === index }"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7 10L12 15L17 10"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Фото новости (уменьшенное, всегда видно) -->
         <img
-          class="img-single__minimg"
-          alt="Slider-Image"
-          :src="link"
-          v-on:click="visibleAwards = !visibleAwards" />
-      </swiper-slide>
-    </swiper>
-    <!-- <h2 class="ab__subtitle">Новости:</h2>
-    <div class="news">
-      <EntitiesNewCard
-        v-for="(n, nIdx) of news"
-        :key="nIdx"
-        :instance="n"
-        v-if="n.teg == 'ticket'" />
-    </div> -->
+          v-if="item.image"
+          :src="item.image"
+          class="news-image"
+          alt="Фото новости"
+          loading="lazy" />
+
+        <!-- Полный текст с анимацией -->
+        <transition name="fade">
+          <div v-if="activeNews === index" class="news-content">
+            <p v-for="(text, i) in item.content" :key="i" class="ab__p">
+              {{ text }}
+            </p>
+          </div>
+        </transition>
+      </div>
+    </div>
   </block-ab>
 </template>
 
 <script>
 import { loadDynamic } from '~/core/helpers/file'
+
 export default {
-  async created() {
-    try {
-      this.news = JSON.parse(await loadDynamic('dynamic/news/news.json'))
-    } catch {
-      console.log('Проверьте валидность JSON новостей и событий!')
-    }
-  },
   data() {
     return {
       news: [],
-      img: [
-        '/img/projects/ticket/bvb1.jpg',
-        '/img/projects/ticket/bvb2.jpg',
-        '/img/projects/ticket/bvb3.jpg',
-        '/img/projects/ticket/bvb4.jpg',
-        '/img/projects/ticket/bvb5.jpg',
-        '/img/projects/ticket/bvb6.jpg',
-        '/img/projects/ticket/bvb7.jpg',
-        '/img/projects/ticket/bvb8.jpg',
-        '/img/projects/ticket/bvb9.jpg',
-        '/img/projects/ticket/bvb10.jpg',
-        '/img/projects/ticket/bvb11.jpg',
-        '/img/projects/ticket/bvb12.jpg',
-      ],
+      activeNews: null,
       awards: ['/img/projects/ticket/award1.jpg'],
       visibleAwards: false,
-      opts: {
-        autoplay: {
-          enabled: true,
-          delay: 3000,
-        },
-      },
     }
+  },
+  async created() {
+    try {
+      this.news = JSON.parse(await loadDynamic('dynamic/news.json'))
+    } catch (e) {
+      console.log('Проверьте валидность JSON новостей и событий!', e)
+    }
+  },
+  methods: {
+    toggleNews(index) {
+      this.activeNews = this.activeNews === index ? null : index
+    },
   },
 }
 </script>
 
 <style scoped lang="scss">
-.ab {
-  &__img {
-    position: absolute;
-    height: 200px;
-    width: 200px;
-    right: 24px;
-    top: 24px;
-    @include high-medium-media() {
-      width: 150px;
-      height: 150px;
-      right: 12px;
-      top: 10px;
-      opacity: 0.4;
-    }
+// Логотип в углу
+.ab__img {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  right: 24px;
+  top: 24px;
+
+  @include high-medium-media() {
+    width: 150px;
+    height: 150px;
+    right: 12px;
+    top: 10px;
+    opacity: 0.4;
   }
 }
-.slider_committe {
+
+// Заголовок раздела новостей
+.ab__news-title {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #c43e3e, #e67e7e);
+    border-radius: 2px;
+  }
+}
+
+// Сетка новостей: 2 колонки на десктопе, 1 на планшете/телефоне
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+// Карточка новости
+.news-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  border: 1px solid #f0f0f0;
+  height: fit-content;
+
+  &:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+}
+
+// Шапка новости (кликабельная область)
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   cursor: pointer;
-  margin: 0px;
-  margin-top: 24px;
-  max-width: 1000px;
+  gap: 16px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+// Блок с датой и заголовком
+.news-meta {
+  flex: 1;
+}
+
+.news-date {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #c43e3e;
+  padding: 4px 12px;
+  border-radius: 30px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.news-title {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #1a2634;
+  font-weight: 600;
+  line-height: 1.4;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+// Кнопка переключения (компактная)
+.news-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 40px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #555;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:hover {
+    background: #f9f9f9;
+    border-color: #c43e3e;
+    color: #c43e3e;
+  }
+
+  &.active {
+    background: #c43e3e;
+    border-color: #c43e3e;
+    color: white;
+
+    &:hover {
+      background: #b03030;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    justify-content: center;
+    padding: 8px 16px;
+  }
+}
+
+.toggle-text {
+  line-height: 1;
+}
+
+.toggle-icon {
+  transition: transform 0.3s ease;
+  stroke-width: 2.2;
+
+  &.rotated {
+    transform: rotate(180deg);
+  }
+}
+
+// Изображение новости — уменьшенное, аккуратное
+.news-image {
+  width: 100%;
+  height: 180px; /* фиксированная высота для единообразия */
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 16px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  @media (max-width: 768px) {
+    height: 160px; /* чуть меньше на телефоне */
+  }
+}
+
+// Полный текст новости
+.news-content {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px dashed #eaeaea;
+
+  .ab__p {
+    margin-bottom: 0.9rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #2c3e50;
+  }
+}
+
+// Анимация появления / исчезновения
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+// Дополнительная адаптация для маленьких экранов
+@media (max-width: 480px) {
+  .news-card {
+    padding: 16px;
+  }
+
+  .news-title {
+    font-size: 0.95rem;
+  }
+
+  .news-image {
+    height: 140px;
+  }
+
+  .news-content .ab__p {
+    font-size: 0.9rem;
+  }
 }
 </style>

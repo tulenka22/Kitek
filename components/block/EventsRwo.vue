@@ -31,7 +31,7 @@
               </div>
               <div class="detail-text">
                 <span class="label">Место:</span>
-                <span class="value">Г. Омск, ул. 27-я Северная, 69</span>
+                <span class="value">г. Омск, ул. 27-я Северная, 69</span>
               </div>
             </div>
 
@@ -45,7 +45,7 @@
               </div>
               <div class="detail-text">
                 <span class="label">Дата:</span>
-                <span class="value">11 апреля 2026г.</span>
+                <span class="value">18 апреля 2026г.</span>
               </div>
             </div>
 
