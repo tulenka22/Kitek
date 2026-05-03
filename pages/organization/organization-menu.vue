@@ -26,6 +26,9 @@
       <nuxt-link to="/organization/teaching-staff" class="menu__link">
         Руководство. Педагогический состав (научно-педагогический состав)
       </nuxt-link>
+      <nuxt-link to="/organization/pedsostav" class="menu__link">
+        Руководство
+      </nuxt-link>
       <nuxt-link to="/organization/material-income" class="menu__link">
         Стипендии и меры поддержки обучающихся
       </nuxt-link>

@@ -1,13 +1,34 @@
 <template>
   <block-ab title="Профессионалитет">
-    <div class="block-zxc__right">
-      <a class="ab__link" href="/professional"> <b>О профессионалитете</b></a>
-      <a class="ab__link" href="/professional/members-cluster">
-        <b>Участники образовательного кластера «Союз+»</b></a
-      >
-      <a class="ab__link" href="/professional/news"> <b>Новости проекта</b></a>
-      <a class="ab__link" href="/professional/careerMaps"> <b>Карьерные карты</b></a>
+    <div class="docs-fab" @click="toggleDocs" :class="{ 'docs-fab--active': showDocs }">
+      <span class="docs-fab__icon">📄</span>
+      <div class="docs-fab__menu" v-if="showDocs">
+        <!-- Ссылки из правого блока -->
+        <a class="docs-fab__link" href="/professional">
+          <span class="link-icon"></span> О профессионалитете
+        </a>
+        <a class="docs-fab__link" href="/professional/members-cluster">
+          <span class="link-icon"></span> Участники образовательного кластера «Союз+»
+        </a>
+        <a class="docs-fab__link" href="/professional/news">
+          <span class="link-icon"></span> Новости проекта
+        </a>
+        <a class="docs-fab__link" href="/professional/careerMaps">
+          <span class="link-icon"></span> Карьерные карты
+        </a>
+      </div>
     </div>
+    <!-- Видео без изменений, только добавлен контейнер с новыми стилями -->
+    <div class="video-container">
+      <video class="ab__video" controls>
+        <source src="/video/profgoriz.mp4" type="video/mp4" />
+      </video>
+
+      <video class="ab__video vertical" controls>
+        <source src="/video/profvertical.mp4" type="video/mp4" />
+      </video>
+    </div>
+
     <p class="ab__p">
       Профессионалитет — это образовательная программа в колледжах, которая позволит тебе стать
       высококвалифицированным специалистом на ведущем предприятии твоего региона
@@ -101,25 +122,21 @@
       </li>
       <li>
         <a href="https://nika.cronwell.com" class="ab__link"
-          >Отель «Cronwell Park Ника» ИП Бомбин С.А
-        </a>
+          >Отель «Cronwell Park Ника» ИП Бомбин С.А</a
+        >
       </li>
       <li>
         <a href="https://vk.com/club54761203?ysclid=lm4gez00jo476575976" class="ab__link"
           >ООО «Стройподряд»</a
         >
       </li>
+      <br /><br /><br />
+
       <li>
-        <a href="https://ibisomsk.ru" class="ab__link"
-          >ОАО «Гостиница «Сибирь» (гостиница ibis Omsk)</a
+        <a href="/data/programa-d-s/РГ_КС_КИТЭК-2025.pdf" class="ab__link"
+          >Состав рабочей группы Координационного совета</a
         >
       </li>
-      <li>
-        <a href="https://irtyshriviera.ru" class="ab__link">ОАО «Гостиница «Иртыш - Ривьера»</a>
-      </li>
-      <br />
-      <br />
-      <br />
       <li>
         <a
           href="/data/programa-d-s/Программа_популяризации_2024_Омская_область.pdf"
@@ -154,7 +171,12 @@
       <li>
         <a href="/data/programa-d-s/Положение_об_УК_КИТЭК.pdf" class="ab__link"
           >Положение об Управляющей компании образовательно кластера среднего профессионального
-          образования «Союз+»,</a
+          образования «Союз+»</a
+        >
+      </li>
+      <li>
+        <a href="/data/programa-d-s/Положение_об_НПК_с_подписями.pdf" class="ab__link"
+          >Положение о проведении научно-практической конференции студентов и преподавателей</a
         >
       </li>
       <br />
@@ -163,8 +185,6 @@
           >О техническом обеспечении</a
         >
       </li>
-
-      <!-- <li><a href="https://irtyshriviera.ru/" class="ab__link">ООО "Иртыш Ривьера"</a></li> -->
     </ul>
     <h2 class="ab__subtitle">Полезные ссылки ФП "Профессионалитет"</h2>
     <div class="contacts__row">
@@ -179,25 +199,20 @@
             <IconProfessional />
           </IconWrapper>
         </a>
-        <!-- <a href="https://t.me/FP_professionalitet" target="_blank" class="icon contacts__social">
-          <IconWrapper width="24" height="24">
-            <IconTelegram />
-          </IconWrapper>
-        </a> -->
       </div>
     </div>
     <div class="document-list">
       <a class="ab__link" href="/professional"> <b red>О профессионалитете</b></a>
       <a class="ab__link" href="/professional/members-cluster">
-        <b red>Участники образовательного кластера «Союз+»</b></a
-      >
+        <b red>Участники образовательного кластера «Союз+»</b>
+      </a>
       <a class="ab__link" href="/professional/news"> <b red>Новости проекта</b></a>
       <a class="ab__link" href="/professional/careerMaps"> <b red>Карьерные карты</b></a>
     </div>
 
-    <a class="ab__link" href="https://япроф.рф/"
-      ><img alt="Logo" target="_blank" src="/img/professional/ЛогоПроф2024.png" class="logo"
-    /></a>
+    <a class="ab__link" href="https://япроф.рф/">
+      <img alt="Logo" target="_blank" src="/img/professional/ЛогоПроф2024.png" class="logo" />
+    </a>
   </block-ab>
 </template>
 
@@ -208,6 +223,7 @@ export default {
   components: { Block },
   data() {
     return {
+      showDocs: false,
       plan: null,
       swiperOptions: {
         grabCursor: true,
@@ -217,13 +233,17 @@ export default {
         },
       },
       title: 'Приёмная комиссия',
-      description:
-        'Бюджетное профессиональное образовательное учреждение Омской области «Колледж инновационных технологий, экономики и коммерции». Колледж ведет подготовку по следующим Специальностям/профессиям, 09.02.07 ИНФОРМАЦИОННЫЕ СИСТЕМЫ И ПРОГРАММИРОВАНИЕ (КВАЛИФИКАЦИЯ – ПРОГРАММИСТ), 09.02.07 ИНФОРМАЦИОННЫЕ СИСТЕМЫ И ПРОГРАММИРОВАНИЕ (КВАЛИФИКАЦИЯ – РАЗРАБОТЧИК WEB И МУЛЬТИМЕДИЙНЫХ ПРИЛОЖЕНИЙ), 40.02.04 ЮРИСПРУДЕНЦИЯ, 38.02.01 ЭКОНОМИКА И БУХГАЛТЕРСКИЙ УЧЕТ (ПО ОТРАСЛЯМ), 38.02.04 КОММЕРЦИЯ (ПО ОТРАСЛЯМ), 43.02.16 ТУРИЗМ И ГОСТЕПРИИМСТВО, 38.02.05 ТОВАРОВЕДЕНИЕ И ЭКСПЕРТИЗА КАЧЕСТВА ПОТРЕБИТЕЛЬСКИХ ТОВАРОВ, 43.02.15 ПОВАРСКОЕ И КОНДИТЕРСКОЕ ДЕЛО, 43.01.09 ПОВАР, КОНДИТЕР, 26.01.09 МОТОРИСТ СУДОВОЙ, 26.02.05 ЭКСПЛУАТАЦИЯ СУДОВЫХ ЭНЕРГЕТИЧЕСКИХ УСТАНОВОК',
+      description: '...', // ваше описание
       jsonPath: 'dynamic/rating/plan.json',
       table_plan: false,
       table: false,
       advantage: false,
     }
+  },
+  methods: {
+    toggleDocs() {
+      this.showDocs = !this.showDocs
+    },
   },
   head() {
     return {
@@ -244,44 +264,51 @@ export default {
       this.error = `Ошибка при загрузке документа '${this.jsonPath}'`
     }
   },
-  methods: {},
   computed: {
     specialties() {
       return this.$store.state.specialties
     },
     fpSpecialties() {
-      const fpSpecialties = []
-      const otherSpecialties = []
-
-      this.specialties.forEach((specialtie) => {
-        if (specialtie.group === 'ФП') {
-          fpSpecialties.push(specialtie)
-        } else {
-          otherSpecialties.push(specialtie)
-        }
-      })
-
-      return fpSpecialties
+      return this.specialties.filter((s) => s.group === 'ФП')
     },
     otherSpecialties() {
-      const fpSpecialties = []
-      const otherSpecialties = []
-
-      this.specialties.forEach((specialtie) => {
-        if (specialtie.group === 'ФП') {
-          fpSpecialties.push(specialtie)
-        } else {
-          otherSpecialties.push(specialtie)
-        }
-      })
-
-      return otherSpecialties
+      return this.specialties.filter((s) => s.group !== 'ФП')
     },
   },
 }
 </script>
 
 <style scoped lang="scss">
+// Все исходные стили остаются без изменений, добавляем только несколько новых снизу
+
+.block-zxc__right {
+  margin-left: 5px;
+}
+.video-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  align-items: stretch;
+  max-width: 600px;
+}
+.ab__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+@media (max-width: 768px) {
+  .video-container {
+    grid-template-columns: 1fr;
+  }
+  .ab__video:first-child {
+    aspect-ratio: 16 / 9;
+  }
+  .ab__video.vertical {
+    aspect-ratio: 9 / 16;
+    max-height: 500px;
+  }
+}
 .logo {
   position: absolute;
   width: 300px;
@@ -318,13 +345,11 @@ export default {
     display: block;
   }
 }
-
 .slider_committe {
   margin: 0px;
   margin-top: 24px;
   max-width: 1000px;
 }
-
 .contacts {
   flex: none;
   &__row {
@@ -338,6 +363,22 @@ export default {
   }
   &__socials {
     flex-grow: 1;
+  }
+}
+
+/* ----- Новые минимальные стили для видео (не меняют сами видео) ----- */
+.video-container {
+  margin: 20px 0;
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.ab__video {
+  transition: box-shadow 0.2s ease;
+  &:hover {
+    box-shadow: 0 0 0 3px #d65460; /* акцентный цвет, не перекрывает элементы управления */
   }
 }
 </style>

@@ -14,7 +14,8 @@
     <BlockSlider />
     <section class="page__content">
       <EventsRwo />
-      <BlockEvents />
+      <!-- <BlockEvents /> -->
+      <!-- <newsnew /> -->
       <BannerMain />
       <BlockNews />
       <BlockSpecialties />
@@ -28,11 +29,13 @@
 <script>
 import BannerMain from '~/components/block/BannerMain.vue'
 import EventsRwo from '~/components/block/EventsRwo.vue'
+import newsnew from '~/components/block/newsnew.vue'
 
 export default {
   components: {
     EventsRwo,
     BannerMain,
+    newsnew,
   },
   data() {
     return {

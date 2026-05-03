@@ -1,20 +1,37 @@
 @import './constants.scss';
 @import './tg.scss';
 @import './mixins.scss';
-
 .menu {
   &__link {
     color: $primary-text-color;
     @extend %tg-navbar;
     display: block;
+    line-height: 40px;
+    text-decoration: none; // Убираем стандартное подчёркивание
+    padding: 0 15px; // Увеличиваем область клика
+    border-bottom: 2px solid transparent; // Резервируем место для подчёркивания при наведении
+    transition: color 0.2s ease, border-color 0.2s ease;
+
     @include high-media {
       font-size: 20px;
+      line-height: 50px; // Увеличиваем высоту на больших экранах
     }
     @include medium-media {
       font-size: 14px;
+      line-height: 36px;
     }
-    line-height: 40px;
-    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: $accent-color; // Основной цвет сайта
+      border-bottom-color: $accent-color;
+    }
+
+    &.active {
+      color: $accent-color;
+      border-bottom-color: $accent-color;
+      font-weight: 500; // Выделяем активный пункт
+    }
   }
 }
 
@@ -199,3 +216,84 @@ b[red] {
     float: left;
   }
 }
+
+.docs-fab {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: $accent-color;
+  box-shadow: 0 8px 20px rgba($accent-color, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 28px;
+
+  @include small-media {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  &__menu {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    padding: 16px 0;
+    min-width: 280px;
+    max-height: 70vh;
+    overflow-y: auto;
+    animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    border: 1px solid #eef2f6;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    color: $primary-text-color;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+    border-left: 4px solid transparent;
+
+    .link-icon {
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.7;
+    }
+
+    &:hover {
+      background: #f8fafd;
+      border-left-color: $accent-color;
+      padding-left: 32px;
+    }
+  }
+
+  &__divider {
+    height: 1px;
+    background: #e2e8f0;
+    margin: 8px 0;
+  }
+}
+
+// Иконки для разных ссылок
+.docs-fab__link.link-about .link-icon {
+  background-image: url('data:image/svg+xml,...');
+}
+// аналогично для .link-members, .link-news, .link-career

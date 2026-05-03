@@ -1,7 +1,6 @@
 <template>
   <block-ab title="Приказы о зачислении" class="enrollment-orders">
-    <common-documents-list json-path="documents/enrolle-orders.json" class="documents-list" />
-
+    <!-- <common-documents-list json-path="documents/enrolle-orders.json" class="documents-list" /> -->
   </block-ab>
 </template>
 
@@ -12,6 +11,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+//стили под текст приказы о зачислении будут добавлены в скором времени
+
+//-------
+
 .enrollment-orders {
   padding: 25px;
   background-color: #ffffff;

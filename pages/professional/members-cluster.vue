@@ -85,8 +85,30 @@ export default {
           url: 'https://vk.com/club54761203?ysclid=lm4gez00jo476575976',
           text: 'ООО «Стройподряд»',
         },
-        { url: 'https://ibisomsk.ru', text: 'ОАО «Гостиница «Сибирь» (гостиница ibis Omsk)' },
-        { url: 'https://irtyshriviera.ru/', text: 'ООО "Иртыш Ривьера"' },
+        {
+          url: 'hotel5060.ru',
+          text: 'ООО "Компания "Топ Лайн"',
+        },
+        {
+          url: 'https://krolik-omsk.ru/',
+          text: 'ООО "Речной"',
+        },
+        {
+          url: 'https://hutorokomsk.ru/',
+          text: 'ИП Поротиков С.С.',
+        },
+        {
+          url: 'https://proviant-omsk.ru/',
+          text: 'ООО "Сибирский провиант"',
+        },
+        {
+          url: 'https://sparomsk.ru/',
+          text: 'ООО "Формат"',
+        },
+        {
+          url: 'https://senkevich-omsk.ru/',
+          text: 'ООО "СИБКОР-2"',
+        },
       ],
       swiperOptions: {
         grabCursor: true,

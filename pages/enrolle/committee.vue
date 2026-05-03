@@ -52,12 +52,12 @@
       </ul>
 
       <p class="ab__p">
-        <b>с 02.06.2025 по 30.06.2025 </b>
+        <b>с 01.06.2026 по 28.06.2026 </b>
       </p>
       <li>Пн-Пт: 09:00-16:00</li>
       <li>Сб-Вс: Выходной</li>
       <p class="ab__p">
-        <b>с 01.07.2025 по 15.08.2025 </b>
+        <b>с 29.06.2026 по 15.08.2026 </b>
       </p>
       <li>Пн-Чт: 09:00-17:00</li>
       <li>Пт: 09:00-16:00</li>
@@ -171,7 +171,7 @@
             <b>
               Перечень документов, предоставляемых в приемную комиссию колледжa в электронном виде
               по всем специальностям/профессиям направляется по электронной почте:
-              omsktec2020@mail.ru, телефон 8(3812)68-07-66 <b red> * </b>
+              tradeconomy@mail.ru, телефон 8(3812)68-07-66 <b red> * </b>
             </b>
           </p>
         </li>
@@ -189,7 +189,7 @@
         <b red>Требующиеся документы:</b>
       </p>
       <li>
-        <a class="ab__link" target="_blank" href="/data/enrolle/Шаблон заявления 2025.pdf"
+        <a class="ab__link" target="_blank" href="/data/enrolle/Шаблон заявления 2026.pdf"
           >Заявление (с личной подписью абитуриента)<b red> * </b>
           <icon-wrapper class="ab__icon" width="12" height="16"><icon-document /></icon-wrapper
         ></a>
@@ -232,8 +232,8 @@
         </ul>
       </li>
       <li>
-        Медицинская справка установленного образца Ф-086у, подтверждающая отсутствие
-        противопоказаний по состоянию здоровья для поступления на выбранную специальность/профессию.
+        Медицинская справка установленного образца, подтверждающая отсутствие противопоказаний по
+        состоянию здоровья для поступления на выбранную специальность/профессию.
       </li>
       <li>
         <a
@@ -261,7 +261,7 @@
       </p>
       <ul class="ab__p small__text">
         <li>26.02.05 Эксплуатация судовых энергетических установок</li>
-        <li>26.01.09 Моторист судовой</li>
+
         <li>43.02.15 Поварское и кондитерское дело</li>
         <li>43.01.09 Повар, кондитер</li>
       </ul>
@@ -387,18 +387,19 @@
         <tbody v-show="table">
           <tr>
             <td class="a-table__cell a-table__cell-8">
-              09.02.07 Информационные системы и программирование (программист)
+              09.02.01 Разработка и управление программным обеспечением: направленность
+              Веб-разработка (квалификация: программист)
             </td>
             <td class="a-table__cell a-table__cell-8 a-table__cell-center">9 классов</td>
-            <td class="a-table__cell a-table__cell-8 a-table__cell-center">4,15</td>
+            <td class="a-table__cell a-table__cell-8 a-table__cell-center">—</td>
           </tr>
           <tr>
             <td class="a-table__cell a-table__cell-8">
-              09.02.07 Информационные системы и программирование (разработчик веб и мультимедийных
-              приложений)
+              09.02.01 Разработка и управление программным обеспечением: направленность Разработка
+              мобильных приложений (квалификация: программист)
             </td>
             <td class="a-table__cell a-table__cell-8 a-table__cell-center">9 классов</td>
-            <td class="a-table__cell a-table__cell-8 a-table__cell-center">4,01</td>
+            <td class="a-table__cell a-table__cell-8 a-table__cell-center">—</td>
           </tr>
           <tr>
             <td class="a-table__cell a-table__cell-8" rowspan="2">
@@ -474,12 +475,16 @@
             <td class="a-table__cell a-table__cell-8 a-table__cell-center">9 классов</td>
             <td class="a-table__cell a-table__cell-8 a-table__cell-center">4,06</td>
           </tr>
-
+          <!-- ИЗМЕНЕНО: добавлена новая направленность -->
           <tr>
-            <td class="a-table__cell a-table__cell-8">26.01.09 Моторист судовой</td>
+            <td class="a-table__cell a-table__cell-8">
+              43.02.16 Туризм и гостеприимство (направленность: Услуги предприятия питания)
+            </td>
             <td class="a-table__cell a-table__cell-8 a-table__cell-center">9 классов</td>
-            <td class="a-table__cell a-table__cell-8 a-table__cell-center">3,06</td>
+            <td class="a-table__cell a-table__cell-8 a-table__cell-center">—</td>
+            <!-- Прочерк, если нет данных -->
           </tr>
+          <!-- ИЗМЕНЕНО: удалена строка "26.01.09 Моторист судовой" -->
           <tr>
             <td class="a-table__cell a-table__cell-8">
               26.02.05 Эксплуатация судовых энергетических установок

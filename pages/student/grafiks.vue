@@ -145,12 +145,12 @@
           <a  id="doc_a" href="/data/docgraf/.pdf"></a>
         </div>
 
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
 
       </div>
   </block-ab>

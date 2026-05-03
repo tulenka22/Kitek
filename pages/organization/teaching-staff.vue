@@ -1,15 +1,14 @@
 <template>
-  <block-ab title="Руководство. Педагогический состав (научно-педагогический состав)">
-    <div class="staff">
-      <entities-person-card v-for="st of staff" :key="st.name" :instance="st" />
-    </div>
+  <block-ab title="Педагогический состав">
     <br />
     <ul v-for="st of cmk" :key="st">
       <li>
-        <a v-if="st.group == search" class="ab__link active" @click="search = st.group">{{
-          st.name
-        }}</a>
-        <a v-else class="ab__link" @click="search = st.group">{{ st.name }}</a>
+        <a v-if="st.group == search" class="ab__link active" @click="search = st.group">
+          {{ st.name }}
+        </a>
+        <a v-else class="ab__link" @click="search = st.group">
+          {{ st.name }}
+        </a>
       </li>
     </ul>
     <div v-if="search != ''">
@@ -20,15 +19,15 @@
               <th class="a-table__cell a-table__cell-head">Фамилия, имя, отчество</th>
               <th class="a-table__cell a-table__cell-head">Должность</th>
               <th class="a-table__cell a-table__cell-head">
-                Уровень образования/ Наименование образователь&shy;ного учреждения
+                Уровень образования/ Наименование образовательного учреждения
               </th>
               <th class="a-table__cell a-table__cell-head">
                 Наименование направления подготовки и (или) специальности
               </th>
               <th class="a-table__cell a-table__cell-head">
-                "Квалификация/<br />
+                Квалификация/<br />
                 Ученая степень/<br />
-                Ученое звание"
+                Ученое звание
               </th>
               <th class="a-table__cell a-table__cell-head">
                 Преподаваемые предметы, дисциплины, междисциплинарные курсы
@@ -37,7 +36,7 @@
                 Сведения о повышении квалификации и (или) профессиональной переподготовке
               </th>
               <th class="a-table__cell a-table__cell-head">Стаж общий</th>
-              <th class="a-table__cell a-table__cell-head">Стаж работы по специаль&shy;ности</th>
+              <th class="a-table__cell a-table__cell-head">Стаж работы по специальности</th>
               <th class="a-table__cell a-table__cell-head">
                 Код и наименование специальностей, профессий, в реализации которых участвует
                 педагогический работник
@@ -82,26 +81,30 @@
                     {{ teacher }}
                   </li>
                 </ul>
-                <a v-if="emp.if == '2'" class="ab__link" @click="emp.if = '999'">▼Подробнее▼</a>
-                <a v-if="emp.if == '999'" class="ab__link" @click="emp.if = '2'">▲Свернуть▲</a>
+                <a v-if="emp.if == '2'" class="ab__link" @click="emp.if = '999'"> ▼Подробнее▼ </a>
+                <a v-if="emp.if == '999'" class="ab__link" @click="emp.if = '2'"> ▲Свернуть▲ </a>
               </td>
               <td class="a-table__cell a-table__cell-8">
                 <div v-for="(raise, raiseIdx) of emp.raise" :key="raiseIdx">
                   <p v-if="raiseIdx <= emp.ifr" class="cmktable__p" v-safe-html="raise" />
                 </div>
-                <a v-if="emp.ifr == '1'" class="ab__link" @click="emp.ifr = '999'">▼Подробнее▼</a>
-                <a v-if="emp.ifr == '999'" class="ab__link" @click="emp.ifr = '1'">▲Свернуть▲</a>
+                <a v-if="emp.ifr == '1'" class="ab__link" @click="emp.ifr = '999'"> ▼Подробнее▼ </a>
+                <a v-if="emp.ifr == '999'" class="ab__link" @click="emp.ifr = '1'"> ▲Свернуть▲ </a>
               </td>
-              <td class="a-table__cell a-table__cell-8">{{ emp.general }}</td>
-              <td class="a-table__cell a-table__cell-8">{{ emp.specialty }}</td>
+              <td class="a-table__cell a-table__cell-8">
+                {{ emp.general }}
+              </td>
+              <td class="a-table__cell a-table__cell-8">
+                {{ emp.specialty }}
+              </td>
               <td class="a-table__cell a-table__cell-8">
                 <ul class="cmktable__list" v-for="(code, codeIdx) of emp.code" :key="codeIdx">
                   <li v-if="codeIdx < emp.ifc" style="font-size: 13px">
                     {{ code }}
                   </li>
                 </ul>
-                <a v-if="emp.ifc == '2'" class="ab__link" @click="emp.ifc = '999'">▼Подробнее▼</a>
-                <a v-if="emp.ifc == '999'" class="ab__link" @click="emp.ifc = '2'">▲Свернуть▲</a>
+                <a v-if="emp.ifc == '2'" class="ab__link" @click="emp.ifc = '999'"> ▼Подробнее▼ </a>
+                <a v-if="emp.ifc == '999'" class="ab__link" @click="emp.ifc = '2'"> ▲Свернуть▲ </a>
               </td>
               <td class="hiden">{{ emp.idgroup }}</td>
             </tr>
@@ -114,99 +117,35 @@
 
 <script>
 import { loadDynamic } from '~/core/helpers/file'
+
 export default {
   data() {
     return {
-      tableActive: 'active',
       cmk: [
         {
           name: 'ЦМК Общеобразовательных дисциплин',
-
           group: 'naturalScience',
         },
         { name: 'ЦМК Иностранного языка', group: 'foreign' },
         { name: 'ЦМК Физической культуры и БЖД', group: 'FK_BJD' },
         {
           name: 'ЦМК Информационных технологий, технологий водного транспорта и права',
-
           group: 'IT_WTT',
         },
         { name: 'ЦМК Экономики и коммерции', group: 'econom' },
         { name: 'ЦМК Товароведения', group: 'merchandiser' },
         { name: 'ЦМК Поварского и кондитерского дела', group: 'cook' },
       ],
-      staff: [
-        {
-          name: 'Ивченко Татьяна Павловна',
-          position: 'Директор, кандидат педагогических наук',
-          phone: '8 (3812) 68-07-73',
-          mail: 'tradeconomy@mail.ru',
-          img: '/img/organization/teaching-staff/Ивченко Т.П.png',
-        },
-        {
-          name: 'Стацюк Ольга Валерьевна',
-          position: 'Главный бухгалтер',
-          phone: '8 (3812) 68-07-64',
-          mail: 'tradeconomy@mail.ru',
-          img: '',
-        },
-        {
-          name: 'Юрьева Елена Георгиевна',
-          position:
-            'Заместитель директора по инновационной и проектной деятельности, кандидат педагогических наук',
-          phone: '8 (3812) 68-07-82',
-          mail: 'tradeconomy@mail.ru',
-          img: '/img/organization/teaching-staff/Юрьева Е.Г.png',
-        },
-        {
-          name: 'Загребнев Виталий Юрьевич',
-          position: 'Заместитель директора по учебной работе',
-          phone: '8 (3812) 68-07-46',
-          mail: 'tradeconomy@mail.ru',
-          img: '/img/organization/teaching-staff/Загребнев В.Ю.png',
-        },
-        {
-          name: 'Жакенова Айман Оразовна',
-          position: 'Заместитель директора по воспитательной работе, кандидат педагогических наук',
-          phone: '8 (3812) 68-26-77',
-          mail: 'tradeconomy@mail.ru',
-          img: '/img/organization/teaching-staff/Жакенова А.О.png',
-        },
-        {
-          name: 'Орлова Вера Михайловна',
-          position: 'Заместитель директора по практической подготовке',
-          phone: '8 (3812) 68-07-82',
-          mail: 'tradeconomy@mail.ru',
-          img: '/img/organization/teaching-staff/Орлова В.М.png',
-        },
-        {
-          name: 'Разливинская Марина Васильевна',
-          position: 'Заместитель директора по административно-хозяйственной работе',
-          phone: '8 (3812) 68-26-55',
-          mail: 'tradeconomy@mail.ru',
-          img: '',
-        },
-        {
-          name: 'Шевчук Кирилл Александрович',
-          position: 'Заместитель директора по вопросам безопасности ',
-          phone: '8 (3812) 68-07-46',
-          mail: 'tradeconomy@mail.ru',
-          img: '/img/organization/teaching-staff/Шевчук К.А.png',
-        },
-      ],
-      table: true,
       employeers: [],
       search: '',
       jsonPath: 'documents/cmk.json',
-      documentsObj: null,
-      readtable: '',
       error: 'Загрузка...',
     }
   },
   async created() {
     try {
-      this.documentsObj = JSON.parse(await loadDynamic(this.jsonPath))
-      this.employeers = this.documentsObj.cmk
+      const documentsObj = JSON.parse(await loadDynamic(this.jsonPath))
+      this.employeers = documentsObj.cmk
     } catch {
       this.error = `Ошибка при загрузке документа '${this.jsonPath}'`
     }
@@ -230,20 +169,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.staff {
-  margin-top: 24px;
-  display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(3, 1fr);
-  @media screen and (max-width: 1440px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media screen and (max-width: 920px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
 .cmktable {
   &__overflow {
     text-align: left;
@@ -262,19 +187,6 @@ export default {
       hyphens: none;
     }
     @include medium-media() {
-      font-size: 14px;
-    }
-  }
-  &__link {
-    margin-top: 8px;
-    display: block;
-    text-align: left;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    cursor: pointer;
-    font-size: 12px;
-    @include medium-media() {
-      line-height: 16px;
       font-size: 14px;
     }
   }
@@ -308,6 +220,7 @@ export default {
     }
   }
 }
+
 .a-table {
   border-spacing: 0;
   border-collapse: collapse;
@@ -326,10 +239,6 @@ export default {
       @include tg(16px, 600, 18px, 0.5px);
       text-align: left;
     }
-    &-center {
-      text-align: center;
-      font-weight: 600;
-    }
     @include medium-media {
       text-overflow: ellipsis;
       overflow: hidden;
@@ -340,6 +249,7 @@ export default {
     }
   }
 }
+
 .ab {
   &__link {
     color: $primary-color;
@@ -350,14 +260,12 @@ export default {
       color: #000;
     }
   }
-  &__subtitle {
-    text-align: center;
-    max-width: 100%;
-  }
 }
+
 .hiden {
   display: none;
 }
+
 .active {
   color: #000;
 }

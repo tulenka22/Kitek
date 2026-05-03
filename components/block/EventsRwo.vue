@@ -31,7 +31,7 @@
               </div>
               <div class="detail-text">
                 <span class="label">Место:</span>
-                <span class="value">г. Омск, ул. 27-я Северная, 69</span>
+                <span class="value">г. Омск, ул. Красный путь, 143</span>
               </div>
             </div>
 

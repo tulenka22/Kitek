@@ -28,8 +28,9 @@ export default {
           '',
           createLink(
             '/organization/teaching-staff',
-            'Руководство. Педагогический состав (научно-педагогический состав)'
+            'Педагогический состав (научно-педагогический состав)'
           ),
+          createLink('/organization/pedsostav', 'Руководство'),
           createLink('/organization/material-income', 'Стипендии и меры поддержки обучающихся'),
           createLink(
             '/organization/logistics-equipment',

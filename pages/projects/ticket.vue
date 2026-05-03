@@ -37,6 +37,11 @@
             @click="toggleNews(index)">
             <div class="ticket-meta">
               <span class="ticket-date">{{ item.date }}</span>
+              <div class="profession-badges">
+                <span v-for="(prof, i) in item.professions" :key="i" class="profession-badge">
+                  {{ prof }}
+                </span>
+              </div>
 
               <h3 class="ticket-name">{{ item.title }}</h3>
             </div>
@@ -386,7 +391,8 @@ export default {
 
 <style scoped lang="scss">
 .ticket-page {
-  position: relative;
+  background: linear-gradient(180deg, #ffffff, #f9fafc);
+  padding-bottom: 60px;
 }
 
 .ab__img {
@@ -472,20 +478,16 @@ h1 {
 }
 
 .ticket-card {
-  background: white;
-
-  border-radius: 16px;
-
-  padding: 26px;
-
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-
-  border: 1px solid #f0f0f0;
-
+  background: linear-gradient(180deg, #ffffff, #fcfcff);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f3f3f7;
   transition: 0.3s ease;
 
   &:hover {
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
   }
 }
 
@@ -504,7 +506,21 @@ h1 {
 .ticket-meta {
   flex: 1;
 }
+.ticket-id {
+  background: #3550d6;
 
+  color: white;
+
+  padding: 5px 14px;
+
+  border-radius: 30px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  display: inline-block;
+}
 .ticket-date {
   background: #c43e3e;
 
@@ -522,13 +538,11 @@ h1 {
 }
 
 .ticket-name {
-  margin-top: 10px;
-
-  font-size: 19px;
-
-  font-weight: 600;
-
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 700;
   color: #1a2634;
+  line-height: 1.3;
 }
 
 .ticket-arrow svg {
@@ -553,7 +567,7 @@ h1 {
 
 .slider-img {
   width: 100%;
-
+  height: 450px;
   object-fit: cover;
 
   display: block;
@@ -672,18 +686,15 @@ h1 {
 }
 
 .mentor-card {
-  background: #fafafa;
-
-  border-radius: 12px;
-
-  padding: 18px 20px;
-
-  border: 1px solid #f0f0f0;
-
-  transition: box-shadow 0.2s;
+  background: white;
+  border-radius: 16px;
+  padding: 22px;
+  border: 1px solid #f1f1f5;
+  transition: 0.3s ease;
 
   &:hover {
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.06);
   }
 }
 
@@ -740,6 +751,29 @@ h1 {
     &:last-child {
       border-bottom: none;
     }
+  }
+}
+
+.profession-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.profession-badge {
+  background: linear-gradient(90deg, #3550d6, #6a82fb);
+  color: white;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  white-space: nowrap;
+  transition: 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(53, 80, 214, 0.25);
   }
 }
 </style>
