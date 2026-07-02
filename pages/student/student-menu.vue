@@ -1,9 +1,15 @@
 <template>
   <block-ab title="Студенту">
     <nav>
+            <nuxt-link to="/student/professionalitet" class="menu__link"
+        >Теперь мы в "Профессионалитете"!</nuxt-link
+      >
+            <nuxt-link to="/student/livestudent" class="menu__link"
+        >Студенческая жизнь: открывай мир, твори будущее!</nuxt-link
+      >
       <nuxt-link to="/student/grafiks" class="menu__link"> График учебного процесса </nuxt-link>
       <nuxt-link to="/student/schedule" class="menu__link"> Расписание занятий </nuxt-link>
-
+      <nuxt-link to="/student/student-projects" class="menu__link"> Студенческие проекты </nuxt-link>
       <nuxt-link to="/student/contests" class="menu__link">
         Конкурсы, олипиады, конференции
       </nuxt-link>
@@ -27,12 +33,8 @@
       <nuxt-link to="/student/mediacenter" class="menu__link"
         >Медиацентр «В ОБЪЕКТИВЕ КИТЭКА»</nuxt-link
       >
-      <nuxt-link to="/student/professionalitet" class="menu__link"
-        >Теперь мы в "Профессионалитете"!</nuxt-link
-      >
-      <nuxt-link to="/student/livestudent" class="menu__link"
-        >Студенческая жизнь: открывай мир, твори будущее!</nuxt-link
-      >
+
+
     </nav>
   </block-ab>
 </template>

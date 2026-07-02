@@ -26,11 +26,12 @@ export default {
         ),
         createColumn(
           '',
+
+          createLink('/organization/pedsostav', 'Руководство'),
           createLink(
             '/organization/teaching-staff',
             'Педагогический состав (научно-педагогический состав)'
           ),
-          createLink('/organization/pedsostav', 'Руководство'),
           createLink('/organization/material-income', 'Стипендии и меры поддержки обучающихся'),
           createLink(
             '/organization/logistics-equipment',

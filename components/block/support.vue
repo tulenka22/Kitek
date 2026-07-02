@@ -4,7 +4,9 @@
       <img class="help" src="/img/help1.png" alt="https://pobeda.onf.ru/" />
       <img class="help__mobile" src="/img/help2.png" alt="https://pobeda.onf.ru/" />
     </a>
+
   </div>
+
 </template>
 
 <script></script>

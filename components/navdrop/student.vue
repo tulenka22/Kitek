@@ -13,6 +13,7 @@ export default {
           '',
           createLink('/student/grafiks', 'График учебного процесса'),
           createLink('/student/schedule', 'Расписание занятий'),
+          createLink('/student/student-projects', 'Студенческие проекты'),
           createLink('/student/contests', 'Конкурсы, олимпиады, конференции'),
           createLink('/student/mediacenter', 'Медиацентр «В ОБЪЕКТИВЕ КИТЭКА»')
         ),

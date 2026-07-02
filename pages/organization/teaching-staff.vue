@@ -1,18 +1,22 @@
 <template>
   <block-ab title="Педагогический состав">
     <br />
-    <ul v-for="st of cmk" :key="st">
-      <li>
-        <a v-if="st.group == search" class="ab__link active" @click="search = st.group">
-          {{ st.name }}
-        </a>
-        <a v-else class="ab__link" @click="search = st.group">
+    <ul>
+      <li v-for="st of cmk" :key="st.group">
+        <a
+          :class="st.group == search ? 'ab__link active' : 'ab__link'"
+          @click="search = st.group"
+        >
           {{ st.name }}
         </a>
       </li>
     </ul>
-    <div v-if="search != ''">
-      <div class="cmktable__overflow dragscroll">
+
+    <div v-if="search">
+      <div v-if="filteredTable.length === 0" style="padding: 20px; text-align: center;">
+        Нет данных для этой группы
+      </div>
+      <div v-else class="cmktable__overflow dragscroll">
         <table class="a-table">
           <thead>
             <tr class="a-table__header">
@@ -44,7 +48,7 @@
             </tr>
           </thead>
           <tbody v-for="(emp, empIdx) of filteredTable" :key="empIdx">
-            <tr v-if="emp.idgroup == search">
+            <tr>
               <td class="a-table__cell a-table__cell-8">
                 <p class="cmktable__p">{{ emp.fio }}</p>
               </td>
@@ -55,7 +59,8 @@
                 <p
                   class="cmktable__p"
                   v-for="(education, educationIdx) of emp.education"
-                  :key="educationIdx">
+                  :key="educationIdx"
+                >
                   {{ education }}
                 </p>
               </td>
@@ -68,7 +73,8 @@
                 <p
                   class="cmktable__p"
                   v-for="(qualification, qualificationIdx) of emp.qualification"
-                  :key="qualificationIdx">
+                  :key="qualificationIdx"
+                >
                   {{ qualification }}
                 </p>
               </td>
@@ -76,20 +82,21 @@
                 <ul
                   class="cmktable__list"
                   v-for="(teacher, teacherIdx) of emp.teacher"
-                  :key="teacherIdx">
+                  :key="teacherIdx"
+                >
                   <li v-if="teacherIdx < emp.if" style="font-size: 13px">
                     {{ teacher }}
                   </li>
                 </ul>
-                <a v-if="emp.if == '2'" class="ab__link" @click="emp.if = '999'"> ▼Подробнее▼ </a>
-                <a v-if="emp.if == '999'" class="ab__link" @click="emp.if = '2'"> ▲Свернуть▲ </a>
+                <a v-if="emp.if === 2 && emp.teacher.length > 2" class="ab__link" @click="emp.if = 999"> ▼Подробнее▼ </a>
+                <a v-if="emp.if === 999" class="ab__link" @click="emp.if = 2"> ▲Свернуть▲ </a>
               </td>
               <td class="a-table__cell a-table__cell-8">
                 <div v-for="(raise, raiseIdx) of emp.raise" :key="raiseIdx">
-                  <p v-if="raiseIdx <= emp.ifr" class="cmktable__p" v-safe-html="raise" />
+                  <p v-if="raiseIdx <= emp.ifr" class="cmktable__p" v-html="raise" />
                 </div>
-                <a v-if="emp.ifr == '1'" class="ab__link" @click="emp.ifr = '999'"> ▼Подробнее▼ </a>
-                <a v-if="emp.ifr == '999'" class="ab__link" @click="emp.ifr = '1'"> ▲Свернуть▲ </a>
+                <a v-if="emp.ifr === 1 && emp.raise.length > 2" class="ab__link" @click="emp.ifr = 999"> ▼Подробнее▼ </a>
+                <a v-if="emp.ifr === 999" class="ab__link" @click="emp.ifr = 1"> ▲Свернуть▲ </a>
               </td>
               <td class="a-table__cell a-table__cell-8">
                 {{ emp.general }}
@@ -103,10 +110,9 @@
                     {{ code }}
                   </li>
                 </ul>
-                <a v-if="emp.ifc == '2'" class="ab__link" @click="emp.ifc = '999'"> ▼Подробнее▼ </a>
-                <a v-if="emp.ifc == '999'" class="ab__link" @click="emp.ifc = '2'"> ▲Свернуть▲ </a>
+                <a v-if="emp.ifc === 2 && emp.code.length > 2" class="ab__link" @click="emp.ifc = 999"> ▼Подробнее▼ </a>
+                <a v-if="emp.ifc === 999" class="ab__link" @click="emp.ifc = 2"> ▲Свернуть▲ </a>
               </td>
-              <td class="hiden">{{ emp.idgroup }}</td>
             </tr>
           </tbody>
         </table>
@@ -122,22 +128,16 @@ export default {
   data() {
     return {
       cmk: [
-        {
-          name: 'ЦМК Общеобразовательных дисциплин',
-          group: 'naturalScience',
-        },
-        { name: 'ЦМК Иностранного языка', group: 'foreign' },
-        { name: 'ЦМК Физической культуры и БЖД', group: 'FK_BJD' },
-        {
-          name: 'ЦМК Информационных технологий, технологий водного транспорта и права',
-          group: 'IT_WTT',
-        },
-        { name: 'ЦМК Экономики и коммерции', group: 'econom' },
-        { name: 'ЦМК Товароведения', group: 'merchandiser' },
+        { name: 'ЦМК Общеобразовательных дисциплин', group: 'naturalScience' },
+        { name: 'ЦМК Физической культуры, БЖД и туризма', group: 'FK_BJD' },
+        { name: 'ЦМК Информационных технологий и права', group: 'IT' },
+        { name: 'ЦМК Технологий водного транспорта', group: 'WTT' },
+        { name: 'ЦМК Экономики и бухгалтерского учета', group: 'econom' },
+        { name: 'ЦМК Торгового дела', group: 'merchandiser' },
         { name: 'ЦМК Поварского и кондитерского дела', group: 'cook' },
       ],
       employeers: [],
-      search: '',
+      search: 'naturalScience',
       jsonPath: 'documents/cmk.json',
       error: 'Загрузка...',
     }
@@ -146,24 +146,23 @@ export default {
     try {
       const documentsObj = JSON.parse(await loadDynamic(this.jsonPath))
       this.employeers = documentsObj.cmk
-    } catch {
-      this.error = `Ошибка при загрузке документа '${this.jsonPath}'`
+      console.log('✅ Загружено сотрудников:', this.employeers.length)
+    } catch (err) {
+      this.error = `Ошибка при загрузке документа '${this.jsonPath}': ${err.message}`
+      console.error(this.error)
     }
-  },
-  methods: {
-    includesLowercase(value, startsValue) {
-      return value?.toLowerCase()?.includes(startsValue?.toLowerCase())
-    },
   },
   computed: {
     filteredTable() {
-      if (!this.search) return this.employeers
-      return this.employeers.filter(
-        (t) =>
-          this.includesLowercase(t.fio, this.search) ||
-          this.includesLowercase(t.idgroup, this.search)
-      )
+      return this.employeers.filter((emp) => emp.idgroup === this.search)
     },
+    groupStats() {
+      const stats = {}
+      this.employeers.forEach(emp => {
+        stats[emp.idgroup] = (stats[emp.idgroup] || 0) + 1
+      })
+      return stats
+    }
   },
 }
 </script>

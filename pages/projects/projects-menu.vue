@@ -14,6 +14,7 @@
         Внедрение стандарта среднего общего образования
       </nuxt-link>
       <nuxt-link to="/professional" class="menu__link"> ФП «Профессионалитет» </nuxt-link>
+      <nuxt-link to="/projects/federalniy-proect-lica-geroev" class="menu__link"> Федеральный проект "Лица Героев" </nuxt-link>
     </nav>
   </block-ab>
 </template>

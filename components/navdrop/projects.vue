@@ -21,11 +21,12 @@ export default {
         ),
         createColumn(
           '',
-          
+
           createLink('/projects/workshop', 'Мастерские'),
           createLink('/projects/soo', 'Внедрение стандарта среднего общего образования'),
           createLink('/professional', 'ФП «Профессионалитет»'),
           createLink('/projects/predp', 'Учебно-производственный комплекс')
+
         ),
       ],
     }

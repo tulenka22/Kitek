@@ -13,8 +13,8 @@
     }">
     <BlockSlider />
     <section class="page__content">
-      <EventsRwo />
-      <!-- <BlockEvents /> -->
+      <!-- <EventsRwo /> -->
+      <BlockEvents />
       <!-- <newsnew /> -->
       <BannerMain />
       <BlockNews />

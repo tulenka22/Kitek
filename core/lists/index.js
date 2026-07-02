@@ -20,15 +20,16 @@ export const organization = [
     url: '/education/standarts',
     text: 'Образовательные стандарты и требования',
   },
+    {
+    url: '/organization/teaching-staff',
+    text: 'Педагогический состав',
+  },
   {
     url: '/organization/leadership',
     text: 'Руководство',
   },
-  {
-    url: '/organization/teaching-staff',
-    text: 'Педагогический состав',
-  },
-  
+
+
   {
     url: '/organization/material-income',
     text: 'Материальная поддержка',
@@ -110,6 +111,14 @@ export const enrolle = [
   },
 ]
 export const student = [
+    {
+    url: '/student/professionalitet',
+    text: 'Теперь мы в "Профессионалитете"!',
+  },
+    {
+    url: '/student/livestudent',
+    text: 'Студенческая жизнь: открывай мир, твори будущее!',
+  },
   {
     url: '/student/schedule',
     text: 'График учебного процессаа',
@@ -118,6 +127,10 @@ export const student = [
     url: '/student/schedule-app',
     text: 'Расписание занятий',
   },
+{
+  url: '/student/student-projects',
+  text: 'Студенческие проекты',
+},
   {
     url: '/student/contests',
     text: 'Конкурсы, олимпиады, конференции',
@@ -150,14 +163,8 @@ export const student = [
     url: '/student/safety',
     text: 'Пожарная безопасность',
   },
-  {
-    url: '/student/professionalitet',
-    text: 'Теперь мы в "Профессионалитете"!',
-  },
-  {
-    url: '/student/livestudent',
-    text: 'Студенческая жизнь: открывай мир, твори будущее!',
-  },
+
+
 ]
 export const teacher = [
   {
