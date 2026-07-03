@@ -20,7 +20,7 @@ export const organization = [
     url: '/education/standarts',
     text: 'Образовательные стандарты и требования',
   },
-    {
+  {
     url: '/organization/teaching-staff',
     text: 'Педагогический состав',
   },
@@ -111,11 +111,11 @@ export const enrolle = [
   },
 ]
 export const student = [
-    {
+  {
     url: '/student/professionalitet',
     text: 'Теперь мы в "Профессионалитете"!',
   },
-    {
+  {
     url: '/student/livestudent',
     text: 'Студенческая жизнь: открывай мир, твори будущее!',
   },
@@ -127,10 +127,10 @@ export const student = [
     url: '/student/schedule-app',
     text: 'Расписание занятий',
   },
-{
-  url: '/student/student-projects',
-  text: 'Студенческие проекты',
-},
+  {
+    url: '/student/student-projects',
+    text: 'Студенческие проекты',
+  },
   {
     url: '/student/contests',
     text: 'Конкурсы, олимпиады, конференции',
@@ -311,13 +311,19 @@ export const specialties = [
       },
       {
         id: 2,
-        title: 'Туризм и гостеприимство (квалификация - специалист по туризму и гостеприимству)',
+        title: 'Туризм и гостеприимство (направленность: экскурсионные услуги)',
         code: '43.02.16',
       },
+
       {
         id: 3,
-        title: 'Туризм и гостеприимство (направоенность: услуги предприятия питания)',
-        code: '430216-1',
+        title: 'Туризм и гостеприимство (направленность: услуги предприятия питания)',
+        code: '43.02.16-1',
+      },
+      {
+        id: 4,
+        title: 'Туризм и гостеприимство (направленность: гостиничные услуги)',
+        code: '43.02.16-2',
       },
     ],
   },
