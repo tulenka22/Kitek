@@ -27,10 +27,10 @@
               </th>
               <th class="a-table__cell a-table__cell-8 a-table__cell-center">Ф.И.О.</th>
 
-              <!-- <th class="a-table__cell a-table__cell-8 a-table__cell-center">Средний балл</th> -->
-              <!-- <th class="a-table__cell a-table__cell-8 a-table__cell-center">
+              <th class="a-table__cell a-table__cell-8 a-table__cell-center">Средний балл</th>
+              <th class="a-table__cell a-table__cell-8 a-table__cell-center">
                 Документ об образовании
-              </th> -->
+              </th>
             </tr>
           </thead>
           <tbody v-for="emp in documentsObj.table" :key="emp.delpole" v-show="table">
