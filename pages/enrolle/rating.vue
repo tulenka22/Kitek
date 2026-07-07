@@ -7,7 +7,7 @@
     <p class="ab__p small__text">по состоянию на {{ data }}</p>
     <div v-if="readtable != ' '">
       <h2 class="ab__subtitle" v-for="spec in srecs" :key="spec.abgroup">
-        <b v-if="spec.abgroup == readtable">Список рекомендованных к зачислению </b>
+        <!-- <b v-if="spec.abgroup == readtable">Список рекомендованных к зачислению </b> -->
         <b red v-if="spec.abgroup == readtable"
           >Специальность "{{ spec.name }}" ({{ spec.description }})
         </b>
