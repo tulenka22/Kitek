@@ -5,16 +5,20 @@
       <a href="https://omsktec.ru/enrolle/orders" style="color: blue">Приказы о зачислении</a>
     </p> -->
     <p class="ab__p small__text">по состоянию на {{ data }}</p>
+
     <div v-if="readtable != ' '">
       <h2 class="ab__subtitle" v-for="spec in srecs" :key="spec.abgroup">
-        <!-- <b v-if="spec.abgroup == readtable">Список рекомендованных к зачислению </b> -->
-        <b red v-if="spec.abgroup == readtable"
-          >Специальность "{{ spec.name }}" ({{ spec.description }})
+        <b red v-if="spec.abgroup == readtable">
+          Специальность "{{ spec.name }}" ({{ spec.description }})
         </b>
-        <b v-if="spec.abgroup == readtable">количество бюджетных мест {{ spec.p }}</b>
+        <b v-if="spec.abgroup == readtable">
+          количество бюджетных мест {{ spec.p }}
+        </b>
       </h2>
     </div>
+
     <p v-if="!documentsObj">{{ error }}</p>
+
     <ul v-else class="ab__list">
       <div class="ab__overflow">
         <table class="a-table">
@@ -26,64 +30,95 @@
                 номер
               </th>
               <th class="a-table__cell a-table__cell-8 a-table__cell-center">Ф.И.О.</th>
-
               <th class="a-table__cell a-table__cell-8 a-table__cell-center">Средний балл</th>
               <th class="a-table__cell a-table__cell-8 a-table__cell-center">
                 Документ об образовании
               </th>
             </tr>
           </thead>
+
           <tbody v-for="emp in documentsObj.table" :key="emp.delpole" v-show="table">
             <tr v-if="emp.abgroup == readtable" class="table__str-color">
+              <!-- № п/п -->
               <td
                 v-if="emp.fio == search"
-                class="a-table__cell a-table__cell-8 a-table__cell-center result">
+                class="a-table__cell a-table__cell-8 a-table__cell-center result"
+              >
                 <b red>{{ emp.n }}</b>
               </td>
-              <td v-else class="a-table__cell a-table__cell-8 a-table__cell-center">
+              <td
+                v-else
+                class="a-table__cell a-table__cell-8 a-table__cell-center"
+              >
                 <p>{{ emp.n }}</p>
               </td>
+
+              <!-- Регистрационный номер -->
               <td
                 v-if="emp.fio == search"
-                class="a-table__cell a-table__cell-8 a-table__cell-center result">
+                class="a-table__cell a-table__cell-8 a-table__cell-center result"
+              >
                 {{ emp.id }}
               </td>
-              <td v-else class="a-table__cell a-table__cell-8 a-table__cell-center">
+              <td
+                v-else
+                class="a-table__cell a-table__cell-8 a-table__cell-center"
+              >
                 {{ emp.id }}
-              </td>
-              <td v-if="emp.fio == search" class="a-table__cell a-table__cell-8 result">
-                <b red>{{ emp.fio }}</b>
-              </td>
-              <td v-else class="a-table__cell a-table__cell-8">
-                <p>{{ emp.fio }}</p>
-              </td>
-              <!-- <td
-                v-if="emp.fio == search"
-                class="a-table__cell a-table__cell-8 a-table__cell-center result">
-                <b red v-if="emp.fio == search">{{ emp.sba }}</b>
               </td>
 
-              <td v-else class="a-table__cell a-table__cell-8 a-table__cell-center">
+              <!-- ФИО -->
+              <td
+                v-if="emp.fio == search"
+                class="a-table__cell a-table__cell-8 result"
+              >
+                <b red>{{ emp.fio }}</b>
+              </td>
+              <td
+                v-else
+                class="a-table__cell a-table__cell-8"
+              >
+                <p>{{ emp.fio }}</p>
+              </td>
+
+              <!-- Средний балл -->
+              <td
+                v-if="emp.fio == search"
+                class="a-table__cell a-table__cell-8 a-table__cell-center result"
+              >
+                <b red>{{ emp.sba }}</b>
+              </td>
+              <td
+                v-else
+                class="a-table__cell a-table__cell-8 a-table__cell-center"
+              >
                 <p>{{ emp.sba }}</p>
-              </td> -->
-              <!-- <td v-if class="a-table__cell a-table__cell-8 a-table__cell-center">
+              </td>
+
+              <!-- Документ об образовании -->
+              <td class="a-table__cell a-table__cell-8 a-table__cell-center">
                 <p>{{ emp.doc }}</p>
-              </td> -->
+              </td>
             </tr>
           </tbody>
         </table>
       </div>
     </ul>
+
     <p v-if="!documentsObj">{{ error }}</p>
-    <!-- Загрузка пользователей и ожидание совпадений с таблицей -->
+
+    <!-- Логика определения readtable по введённому ФИО -->
     <div v-else>
       <div v-for="(us, usIdx) of filteredTable" :key="usIdx">
         <p class="hiden" v-if="us.fio === search">
           {{ (readtable = us.abgroup) }}
         </p>
-        <p class="hiden" v-if="us.fio != search">{{ (readtable = ' ') }}</p>
+        <p class="hiden" v-if="us.fio != search">
+          {{ (readtable = ' ') }}
+        </p>
       </div>
     </div>
+
     <div class="contacts__row">
       <div class="contacts__row contacts__socials">
         <a href="https://vk.com/omsktec" target="_blank" class="icon contacts__social">
@@ -108,199 +143,123 @@
 
 <script>
 import { loadDynamic } from '~/core/helpers/file'
+
 export default {
   data() {
     return {
       randomNum: Math.floor(Math.random() * 1000) + 1,
       table: true,
       employeers: [],
+      // актуализированный список специальностей под abgroup из JSON
       srecs: [
         {
-          abgroup: 'isp',
-          name: 'Информационные системы и программирование',
-          description: 'квалификация: программист',
+          abgroup: 'rmp',
+          name: 'Разработка и управление программными системами',
+          description: 'квалификация: техник-программист',
           p: '25',
         },
-
         {
-          abgroup: 'isr',
-
-          name: 'Информационные системы и программирование',
-
+          abgroup: 'vr',
+          name: 'Веб-разработка и мультимедийные приложения',
           description: 'квалификация: разработчик веб и мультимедийных приложений',
-
           p: '50',
         },
-
         {
           abgroup: 'tdk9',
-
-          name: 'Торговое дело',
-
-          description: 'По направленности коммерция',
-
+          name: 'Торговое дело (коммерция)',
+          description: 'база: 9 класс, направленность коммерция',
           p: '50',
         },
-
         {
           abgroup: 'tdk11',
-
-          name: 'Торговое дело',
-
-          description: 'По направленности коммерция',
-
+          name: 'Торговое дело (коммерция)',
+          description: 'база: 11 класс, направленность коммерция',
           p: '25',
         },
-
         {
           abgroup: 'tdt9',
-
-          name: 'Торговое дело',
-
-          description: 'Направленность товароведение',
-
+          name: 'Торговое дело (товароведение)',
+          description: 'база: 9 класс, направленность товароведение',
           p: '50',
         },
-
         {
           abgroup: 'tdt11',
-
-          name: 'Торговое дело',
-
-          description: 'Направленность товароведение',
-
+          name: 'Торговое дело (товароведение)',
+          description: 'база: 11 класс, направленность товароведение',
           p: '25',
         },
-
-        {
-          abgroup: 'pso',
-
-          name: 'Право и организация социального обеспечения',
-
-          description: 'квалификация: юрист',
-
-          p: '25',
-        },
-
-        {
-          abgroup: 'te9',
-
-          name: 'Товароведение и экспертиза качества потребительских товаров',
-
-          description: 'квалификация: товаровед-эксперт',
-
-          p: '50',
-        },
-
-        {
-          abgroup: 'te11',
-
-          name: 'Товароведение и экспертиза качества потребительских товаров',
-
-          description: 'квалификация: товаровед-эксперт',
-
-          p: '25',
-        },
-
         {
           abgroup: 'b9',
-
           name: 'Экономика и бухгалтерский учет',
-
-          description: 'по отраслям) (квалификация: бухгалтер',
-
+          description: 'база: 9 класс, квалификация: бухгалтер',
           p: '50',
         },
-
         {
           abgroup: 'b11',
-
           name: 'Экономика и бухгалтерский учет',
-
-          description: 'по отраслям) (квалификация: бухгалтер',
-
+          description: 'база: 11 класс, квалификация: бухгалтер',
           p: '25',
         },
-
-        {
-          abgroup: 'gd',
-
-          name: 'Гостиничное дело',
-
-          description: 'квалификация: специалист по туризму и гостеприимству',
-
-          p: '25',
-        },
-
         {
           abgroup: 'tgg',
-
           name: 'Туризм и гостеприимство',
-
-          description: 'Направленность гостиничные услуги',
-
+          description: 'направленность: гостиничные услуги',
           p: '25',
         },
-
         {
           abgroup: 'tge',
-
           name: 'Туризм и гостеприимство',
-
-          description: 'Направленность экскурсионные услуги',
-
+          description: 'направленность: экскурсионные услуги',
           p: '25',
         },
-
+        {
+          abgroup: 'tgp',
+          name: 'Туризм и гостеприимство',
+          description: 'направленность: предприятия питания',
+          p: '25',
+        },
         {
           abgroup: 'pkd9',
-
           name: 'Поварское и кондитерское дело',
-
-          description: 'квалификация: специалист по поварскому и кондитерскому делу',
-
+          description: 'база: 9 класс, специалист по поварскому и кондитерскому делу',
           p: '100',
         },
-
         {
           abgroup: 'pkd11',
-
           name: 'Поварское и кондитерское дело',
-
-          description: 'квалификация: специалист по поварскому и кондитерскому делу',
-
+          description: 'база: 11 класс, специалист по поварскому и кондитерскому делу',
           p: '25',
         },
-
         {
           abgroup: 'pk',
-
           name: 'Повар, кондитер',
-
-          description: 'квалификация: Повар, кондитер',
-
-          p: '100',
+          description: 'квалификация: повар, кондитер',
+          p: '75',
         },
-
         {
           abgroup: 'esu',
-
           name: 'Эксплуатация судовых энергетических установок',
-
-          description: 'Квалификация: Техник – судомеханик',
-
-          p: '50',
+          description: 'квалификация: техник-судомеханик',
+          p: '75',
         },
-
+        {
+          abgroup: 'pso',
+          name: 'Право и организация социального обеспечения',
+          description: 'квалификация: юрист',
+          p: '25',
+        },
+        {
+          abgroup: 'gd',
+          name: 'Гостиничное дело',
+          description: 'квалификация: специалист по туризму и гостеприимству',
+          p: '25',
+        },
         {
           abgroup: 'ms',
-
-          name: 'Моторист судовой',
-
+          name: 'Моторист-судомеханик',
           description:
-            'Квалификация: Моторист самостоятельного управления судовым двигателем; помощник механика',
-
-          p: '25',
+            'квалификация: моторист самостоятельного управления судовым двигателем; помощник механика',
+          p: '50',
         },
       ],
       search: '',
