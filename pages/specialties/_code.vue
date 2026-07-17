@@ -384,6 +384,14 @@
 
         <!-- ------------------------------------------------- -->
         <!-- Повар кондитер -->
+
+        <li v-if="currentSpec.plan2026">
+          <a class="ab__link" target="_blank" :href="currentSpec.plan2026">
+            Учебный план по профессии 43.01.09 Повар, кондитер, 2026 г.
+          </a>
+        </li>
+
+
         <li v-if="currentSpec.pk1">
           <a class="ab__link" target="_blank" :href="currentSpec.pk1">Учебный план, 2025 г.</a>
         </li>
@@ -412,6 +420,18 @@
 
         <!-- ------------------------------------------------- -->
         <!-- ПКД -->
+
+        <li v-if="currentSpec.plan2026_9">
+          <a class="ab__link" target="_blank" :href="currentSpec.plan2026_9">
+            Учебный план на базе основного общего образования, 2026 г.
+          </a>
+        </li>
+        <li v-if="currentSpec.plan2026_11">
+          <a class="ab__link" target="_blank" :href="currentSpec.plan2026_11">
+            Учебный план на базе среднего общего образования, 2026 г.
+          </a>
+        </li>
+
         <li v-if="currentSpec.pkd1">
           <a class="ab__link" target="_blank" :href="currentSpec.pkd1"
             >Учебный план на базе основного общего образования, 2025 г.</a
@@ -523,6 +543,18 @@
         </li>
         <!-- ------------------------------------------------- -->
         <!-- Юриспруденция -->
+
+        <li v-if="currentSpec.plan2026">
+          <a class="ab__link" target="_blank" :href="currentSpec.plan2026">
+            Учебный план (очная форма обучения), 2026 г.
+          </a>
+        </li>
+        <li v-if="currentSpec.plan2026z">
+          <a class="ab__link" target="_blank" :href="currentSpec.plan2026z">
+            Учебный план (заочная форма обучения), 2026 г.
+          </a>
+        </li>
+
         <li v-if="currentSpec.you1">
           <a class="ab__link" target="_blank" :href="currentSpec.you1"
             >Учебный план (очная форма обучения), 2025 г.</a
