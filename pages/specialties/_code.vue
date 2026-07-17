@@ -389,7 +389,7 @@
         </li>
         <li v-if="currentSpec.pk2">
           <a class="ab__link" target="_blank" :href="currentSpec.pk2"
-            >Образовательная программа, 2025 г.</a
+            >Образовательная программа, 2025  г.</a
           >
         </li>
         <li v-if="currentSpec.pk3">
