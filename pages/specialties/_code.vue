@@ -21,7 +21,7 @@
         </li>
       </ul>
     </div>
-    <div class="ab__p" v-if="!currentSpec.careerMap">
+    <div class="ab__p" v-if="currentSpec.jobs && currentSpec.jobs.length > 0">
       <ul class="ab__list">
         <b>Выпускник колледжа работает:</b>
         <li v-for="(job, jobIdx) of currentSpec.jobs" :key="jobIdx">{{ job }}</li>
@@ -56,6 +56,12 @@
         </li>
         <!-- экскурсионные услуги -->
 
+        <li v-if="currentSpec.plan2026_ekz">
+          <a class="ab__link" target="_blank" :href="currentSpec.plan2026_ekz">
+            Учебный план (направленности - экскурсионные услуги), 2026 г.
+          </a>
+        </li>
+
         <li v-if="currentSpec.gos">
           <a class="ab__link" target="_blank" :href="currentSpec.gos">Гостиничные услуги, 2025г</a>
         </li>
@@ -88,6 +94,43 @@
             2025г</a>
         </li>
 
+        <!--ТУРИЗМ И ГОСТЕПРИИМСТВО (НАПРАВЛЕННОСТЬ: УСЛУГИ ПРЕДПРИЯТИЯ ПИТАНИЯ)-->
+
+        <li v-if="currentSpec.plan2026_pit">
+          <a class="ab__link" target="_blank" :href="currentSpec.plan2026_pit">
+            Учебный план направленности "Услуги предприятия питания", 2026 г.
+          </a>
+        </li>
+
+        <!--ТУРИЗМ И ГОСТЕПРИИМСТВО (НАПРАВЛЕННОСТЬ: ГОСТИНИЧНЫЕ УСЛУГИ)-->
+
+        <li v-if="currentSpec.plan2026_gost">
+          <a class="ab__link" target="_blank" :href="currentSpec.plan2026_gost">
+            Учебный план направленности "Гостиничные услуги", 2026 г.
+          </a>
+        </li>
+        <li v-if="currentSpec.tgg1">
+          <a class="ab__link" target="_blank" :href="currentSpec.tgg1">
+            Учебный план направленности "Гостиничные услуги", 2025 г.
+          </a>
+        </li>
+        <li v-if="currentSpec.tgg3">
+          <a class="ab__link" target="_blank" :href="currentSpec.tgg3">
+            Образовательная программа направленности "Гостиничные услуги", 2025 г.
+          </a>
+        </li>
+        <li v-if="currentSpec.tgg5">
+          <a class="ab__link" target="_blank" :href="currentSpec.tgg5">
+            Учебный план направленности "Гостиничные услуги", 2024 г.
+          </a>
+        </li>
+        <li v-if="currentSpec.educationProgram2024">
+          <a class="ab__link" target="_blank" :href="currentSpec.educationProgram2024">
+            Образовательная программа направленности "Гостиничные услуги", 2024 г.
+          </a>
+        </li>
+
+
         <!--<b>Учебный план:</b>-->
 
         <li v-if="currentSpec.baza9">
@@ -95,8 +138,9 @@
             образования, 2025 г.</a>
         </li>
         <li v-if="currentSpec.baza11">
-          <a class="ab__link" target="_blank" :href="currentSpec.baza11">Учебный план на базе среднего общего
-            образования, 2025 г.</a>
+          <a class="ab__link" target="_blank" :href="currentSpec.baza11"
+            >Учебный план на базе среднего общего образования, 2025 г.
+          </a>
         </li>
 
         <li v-if="currentSpec.plan2025web">
@@ -343,6 +387,13 @@
 
         <!-- ------------------------------------------------- -->
         <!-- Повар кондитер -->
+
+        <li v-if="currentSpec.plan20026">
+          <a class="ab__link" target="_blank" :href="currentSpec.plan20026">
+            Учебный план по профессии 43.01.09 Повар, кондитер, 2026 г.
+          </a>
+        </li>
+
         <li v-if="currentSpec.pk1">
           <a class="ab__link" target="_blank" :href="currentSpec.pk1">Учебный план, 2025 г.</a>
         </li>
@@ -355,9 +406,6 @@
         <li v-if="currentSpec.pk4">
           <a class="ab__link" target="_blank" :href="currentSpec.pk4">Образовательная программа, 2024 г.</a>
         </li>
-        <li v-if="currentSpec.pk5">
-          <a class="ab__link" target="_blank" :href="currentSpec.pk5">Учебный план, 2023 г.</a>
-        </li>
         <li v-if="currentSpec.pk6">
           <a class="ab__link" target="_blank" :href="currentSpec.pk6"> </a>
         </li>
@@ -367,6 +415,18 @@
 
         <!-- ------------------------------------------------- -->
         <!-- ПКД -->
+
+        <li v-if="currentSpec.plan2026_9">
+          <a class="ab__link" target="_blank" :href="currentSpec.plan2026_9">
+            Учебный план на базе основного общего образования, 2026 г.
+          </a>
+        </li>
+        <li v-if="currentSpec.plan2026_11">
+          <a class="ab__link" target="_blank" :href="currentSpec.plan2026_11">
+            Учебный план на базе среднего общего образования, 2026 г.
+          </a>
+        </li>
+
         <li v-if="currentSpec.pkd1">
           <a class="ab__link" target="_blank" :href="currentSpec.pkd1">Учебный план на базе основного общего
             образования, 2025 г.</a>
@@ -459,6 +519,18 @@
         </li>
         <!-- ------------------------------------------------- -->
         <!-- Юриспруденция -->
+
+        <li v-if="currentSpec.plan2026">
+          <a class="ab__link" target="_blank" :href="currentSpec.plan2026">
+            Учебный план (очная форма обучения), 2026 г.
+          </a>
+        </li>
+        <li v-if="currentSpec.plan2026z">
+          <a class="ab__link" target="_blank" :href="currentSpec.plan2026z">
+            Учебный план (заочная форма обучения), 2026 г.
+          </a>
+        </li>
+
         <li v-if="currentSpec.you1">
           <a class="ab__link" target="_blank" :href="currentSpec.you1">Учебный план (очная форма обучения), 2025 г.</a>
         </li>
