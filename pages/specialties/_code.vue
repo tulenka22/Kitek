@@ -138,8 +138,8 @@
             образования, 2025 г.</a>
         </li>
         <li v-if="currentSpec.baza11">
-          <a class="ab__link" target="_blank" :href="currentSpec.baza11"
-            >Учебный план на базе среднего общего образования, 2025 г.
+          <a class="ab__link" target="_blank" :href="currentSpec.baza11">Учебный план на базе среднего общего
+            образования, 2025 г.
           </a>
         </li>
 
@@ -265,6 +265,21 @@
 
         <!-- ------------------------------------------------- -->
         <!-- ТД Коммерция -->
+        <li v-if="currentSpec.td13">
+          <a class="ab__link" target="_blank" :href="currentSpec.td13">Учебный план (направленность - коммерция) на базе
+            среднего общего образования, 2026
+            г.</a>
+        </li>
+        <li v-if="currentSpec.td14">
+          <a class="ab__link" target="_blank" :href="currentSpec.td14">Учебный план (направленность - коммерция) на базе
+            среднего общего образования(заочно), 2026
+            г.</a>
+        </li>
+        <li v-if="currentSpec.td12">
+          <a class="ab__link" target="_blank" :href="currentSpec.td12">Учебный план (направленность - коммерция) на базе
+            основного общего образования, 2026
+            г.</a>
+        </li>
         <li v-if="currentSpec.td1">
           <a class="ab__link" target="_blank" :href="currentSpec.td1">Учебный план (направленность - коммерция) на базе
             основного общего образования, 2025
@@ -328,6 +343,16 @@
 
         <!-- ------------------------------------------------- -->
         <!-- ТД Товароведение -->
+        <li v-if="currentSpec.tt10">
+          <a class="ab__link" target="_blank" :href="currentSpec.tt10">Учебный план (направленность - товароведение) на
+            базе среднего общего образования,
+            2026 г.</a>
+        </li>
+        <li v-if="currentSpec.tt9">
+          <a class="ab__link" target="_blank" :href="currentSpec.tt9">Учебный план (направленность - товароведение) на
+            базе основного общего образования,
+            2026 г.</a>
+        </li>
         <li v-if="currentSpec.tt1">
           <a class="ab__link" target="_blank" :href="currentSpec.tt1">Учебный план (направленность - товароведение) на
             базе основного общего образования,
