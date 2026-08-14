@@ -40,58 +40,34 @@
           <tbody v-for="emp in documentsObj.table" :key="emp.delpole" v-show="table">
             <tr v-if="emp.abgroup == readtable" class="table__str-color">
               <!-- № п/п -->
-              <td
-                v-if="emp.fio == search"
-                class="a-table__cell a-table__cell-8 a-table__cell-center result"
-              >
+              <td v-if="emp.fio == search" class="a-table__cell a-table__cell-8 a-table__cell-center result">
                 <b red>{{ emp.n }}</b>
               </td>
-              <td
-                v-else
-                class="a-table__cell a-table__cell-8 a-table__cell-center"
-              >
+              <td v-else class="a-table__cell a-table__cell-8 a-table__cell-center">
                 <p>{{ emp.n }}</p>
               </td>
 
               <!-- Регистрационный номер -->
-              <td
-                v-if="emp.fio == search"
-                class="a-table__cell a-table__cell-8 a-table__cell-center result"
-              >
+              <td v-if="emp.fio == search" class="a-table__cell a-table__cell-8 a-table__cell-center result">
                 {{ emp.id }}
               </td>
-              <td
-                v-else
-                class="a-table__cell a-table__cell-8 a-table__cell-center"
-              >
+              <td v-else class="a-table__cell a-table__cell-8 a-table__cell-center">
                 {{ emp.id }}
               </td>
 
               <!-- ФИО -->
-              <td
-                v-if="emp.fio == search"
-                class="a-table__cell a-table__cell-8 result"
-              >
+              <td v-if="emp.fio == search" class="a-table__cell a-table__cell-8 result">
                 <b red>{{ emp.fio }}</b>
               </td>
-              <td
-                v-else
-                class="a-table__cell a-table__cell-8"
-              >
+              <td v-else class="a-table__cell a-table__cell-8">
                 <p>{{ emp.fio }}</p>
               </td>
 
               <!-- Средний балл -->
-              <td
-                v-if="emp.fio == search"
-                class="a-table__cell a-table__cell-8 a-table__cell-center result"
-              >
+              <td v-if="emp.fio == search" class="a-table__cell a-table__cell-8 a-table__cell-center result">
                 <b red>{{ emp.sba }}</b>
               </td>
-              <td
-                v-else
-                class="a-table__cell a-table__cell-8 a-table__cell-center"
-              >
+              <td v-else class="a-table__cell a-table__cell-8 a-table__cell-center">
                 <p>{{ emp.sba }}</p>
               </td>
 
@@ -104,6 +80,7 @@
         </table>
       </div>
     </ul>
+
 
     <p v-if="!documentsObj">{{ error }}</p>
 
@@ -290,48 +267,60 @@ export default {
   &__button {
     cursor: pointer;
     color: $accent-color;
+
     &:hover {
       color: $primary-text-color;
     }
   }
 }
+
 .search {
   margin-top: 12px;
   max-width: 1200px;
 }
+
 .result {
   background-color: rgb(211, 211, 211);
 }
+
 .hiden {
   visibility: hidden;
 }
+
 .small {
   &__text {
     @extend %tg-event-card-subtitle;
+
     @include medium-media() {
       font-size: 14px;
     }
   }
 }
+
 .ab {
   &__overflow {
     max-width: 100vw;
     overflow: auto;
   }
 }
+
 .click {
   cursor: pointer;
 }
+
 .contacts {
   flex: none;
+
   &__row {
     display: flex;
   }
+
   &__social {
     &:nth-child(even) {
       margin: 0 12px;
     }
   }
+
   &__socials {
     flex-grow: 1;
   }
