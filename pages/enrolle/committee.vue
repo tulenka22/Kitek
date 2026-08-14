@@ -4,19 +4,10 @@
       <common-documents-list json-path="documents/committee-links.json" />
     </div>
     <div class="logos">
-      <a class="ab__link" href="https://omsktec.ru/professional"
-        ><img
-          alt="Logo Профессионалитет"
-          target="_blank"
-          src="/img/professional/ЛогоПроф2024.png"
-          class="logoProf"
-      /></a>
+      <a class="ab__link" href="https://omsktec.ru/professional"><img alt="Logo Профессионалитет" target="_blank"
+          src="/img/professional/ЛогоПроф2024.png" class="logoProf" /></a>
       <div>
-        <img
-          alt="Logo СтройПодряд"
-          target="_blank"
-          src="/img/professional/companies/4.png"
-          class="logoStroypodryad" />
+        <img alt="Logo СтройПодряд" target="_blank" src="/img/professional/companies/4.png" class="logoStroypodryad" />
         <p class="ab__p" style="text-align: center">Опорная организация</p>
       </div>
     </div>
@@ -29,10 +20,8 @@
       Ваш браузер не поддерживает видео
     </video>
     <p class="ab__p">
-      <b
-        >Бюджетное профессиональное образовательное учреждение Омской области «Колледж инновационных
-        технологий, экономики и коммерции»</b
-      >
+      <b>Бюджетное профессиональное образовательное учреждение Омской области «Колледж инновационных
+        технологий, экономики и коммерции»</b>
       является открытым инновационным образовательным учреждением с развивающейся
       культурно-образовательной средой, обеспечивающей качество подготовки компетентного
       специалиста, воспитание творческой социально-успешной личности гражданина и патриота.
@@ -76,11 +65,8 @@
       </li>
     </ul>
     <p class="ab__p">
-      <a
-        href="https://2gis.ru/omsk/firm/282003257722518?m=73.38383%2C55.026562%2F16"
-        target="_blank"
-        ><b>Адрес 2 GIS</b>: г. Омск, ул. 27-я Северная, 69.</a
-      >
+      <a href="https://2gis.ru/omsk/firm/282003257722518?m=73.38383%2C55.026562%2F16" target="_blank"><b>Адрес 2
+          GIS</b>: г. Омск, ул. 27-я Северная, 69.</a>
     </p>
     <p class="ab__p"><b>Телефон</b>: 8 (3812) 68-07-66</p>
 
@@ -100,20 +86,15 @@
     </ul> -->
     <ul class="ab__list spec-li">
       <p class="ab__p">
-        <b red
-          >Специальности/профессии реализуемые в рамках федерального проекта «Профессионалитет»:</b
-        >
+        <b red>Специальности/профессии реализуемые в рамках федерального проекта «Профессионалитет»:</b>
       </p>
       <li v-if="fpSpecialties.length">
         <ul>
           <li v-for="spec of fpSpecialties" :key="spec.id">
-            <nuxt-link
-              v-if="
-                spec.name != '40.02.01 ПРАВО И ОРГАНИЗАЦИЯ СОЦИАЛЬНОГО ОБЕСПЕЧЕНИЯ' &&
-                spec.name != '43.02.14 ГОСТИНИЧНОЕ ДЕЛО'
-              "
-              class="ab__link"
-              :to="`/specialties/${spec.code}`">
+            <nuxt-link v-if="
+              spec.name != '40.02.01 ПРАВО И ОРГАНИЗАЦИЯ СОЦИАЛЬНОГО ОБЕСПЕЧЕНИЯ' &&
+              spec.name != '43.02.14 ГОСТИНИЧНОЕ ДЕЛО'
+            " class="ab__link" :to="`/specialties/${spec.code}`">
               {{ spec.name }}
             </nuxt-link>
           </li>
@@ -125,13 +106,10 @@
       <li v-if="otherSpecialties.length">
         <ul>
           <li v-for="spec of otherSpecialties" :key="spec.id">
-            <nuxt-link
-              v-if="
-                spec.name != '40.02.01 ПРАВО И ОРГАНИЗАЦИЯ СОЦИАЛЬНОГО ОБЕСПЕЧЕНИЯ' &&
-                spec.name != '43.02.14 ГОСТИНИЧНОЕ ДЕЛО'
-              "
-              class="ab__link"
-              :to="`/specialties/${spec.code}`">
+            <nuxt-link v-if="
+              spec.name != '40.02.01 ПРАВО И ОРГАНИЗАЦИЯ СОЦИАЛЬНОГО ОБЕСПЕЧЕНИЯ' &&
+              spec.name != '43.02.14 ГОСТИНИЧНОЕ ДЕЛО'
+            " class="ab__link" :to="`/specialties/${spec.code}`">
               {{ spec.name }}
             </nuxt-link>
           </li>
@@ -189,10 +167,9 @@
         <b red>Требующиеся документы:</b>
       </p>
       <li>
-        <a class="ab__link" target="_blank" href="/data/enrolle/Шаблон заявления 2026.pdf"
-          >Заявление (с личной подписью абитуриента)<b red> * </b>
-          <icon-wrapper class="ab__icon" width="12" height="16"><icon-document /></icon-wrapper
-        ></a>
+        <a class="ab__link" target="_blank" href="/data/enrolle/Шаблон заявления 2026.pdf">Заявление (с личной подписью
+          абитуриента)<b red> * </b>
+          <icon-wrapper class="ab__icon" width="12" height="16"><icon-document /></icon-wrapper></a>
       </li>
       <p class="ab__p">
         В соответствии с изменениями в нормативно-правовых актах, регламентирующих прием
@@ -206,28 +183,21 @@
       </li>
       <li>4 фотографии 3*4 см (заочное отделение: 2 шт)</li>
       <li>
-        <a
-          >Согласие на обработку персональных данных (с личной подписью абитуриента или законного
+        <a>Согласие на обработку персональных данных (с личной подписью абитуриента или законного
           представителя)
         </a>
         <ul>
           <li>
-            <a
-              class="ab__link"
-              target="_blank"
+            <a class="ab__link" target="_blank"
               href="/data/enrolle/Согласие на обработку персональных данных для несовершеннолетних.pdf">
-              - для несовершеннолетних<icon-wrapper class="ab__icon" width="12" height="16"
-                ><icon-document /></icon-wrapper
-            ></a>
+              - для несовершеннолетних<icon-wrapper class="ab__icon" width="12"
+                height="16"><icon-document /></icon-wrapper></a>
           </li>
           <li>
-            <a
-              class="ab__link"
-              target="_blank"
+            <a class="ab__link" target="_blank"
               href="/data/enrolle/Согласие на обработку персональных данных для совершеннолетних.pdf">
-              - для совершеннолетних<icon-wrapper class="ab__icon" width="12" height="16"
-                ><icon-document /></icon-wrapper
-            ></a>
+              - для совершеннолетних<icon-wrapper class="ab__icon" width="12"
+                height="16"><icon-document /></icon-wrapper></a>
           </li>
         </ul>
       </li>
@@ -236,20 +206,14 @@
         состоянию здоровья для поступления на выбранную специальность/профессию.
       </li>
       <li>
-        <a
-          class="ab__link"
-          target="_blank"
-          href="/data/enrolle/Лист ознакомления с перечнем мед.противовпоказаний.pdf">
+        <a class="ab__link" target="_blank" href="/data/enrolle/Лист ознакомления с перечнем мед.противовпоказаний.pdf">
           Лист ознакомления с перечнем медицинских противопоказании (с личной подписью абитуриента
           или законного представителя)
-          <b red> ** </b
-          ><icon-wrapper class="ab__icon" width="12" height="16"><icon-document /></icon-wrapper
-        ></a>
+          <b red> ** </b><icon-wrapper class="ab__icon" width="12" height="16"><icon-document /></icon-wrapper></a>
       </li>
       <p class="ab__p small__text">
         <b red> * </b>
-        <a
-          href="/data/enrolle/о внесении изменений в порядок приема на обучение по образовательным программам СПО.pdf"
+        <a href="/data/enrolle/о внесении изменений в порядок приема на обучение по образовательным программам СПО.pdf"
           target="_blank">
           <b>Приказ Министерства просвещения РФ №915 от 20.10.2022 г.</b> «О внесении изменений в
           порядок приёма на обучение по образовательным программам среднего профессионального
@@ -373,8 +337,8 @@
     </p>
     <div class="table-center">
       <p class="ab__p" style="cursor: pointer" v-on:click="table = !table">
-        <icon-wrapper class="icon-tap" width="20" height="24"><icon-tapclick /></icon-wrapper
-        ><b red-prim>Проходной балл 2025</b>
+        <icon-wrapper class="icon-tap" width="20" height="24"><icon-tapclick /></icon-wrapper><b red-prim>Проходной балл
+          2025</b>
       </p>
       <table class="a-table">
         <thead v-on:click="table = !table">
@@ -499,16 +463,13 @@
       <b red-prim>Преимущество колледжа - сотрудничество с ВУЗами</b>
     </p>
     <h2 class="ab__subtitle" @click="table_plan = !table_plan">
-      <icon-wrapper class="icon-tap" width="20" height="24"><icon-tapclick /></icon-wrapper
-      ><a href="\data\programa-d-s\Рубрика-Вопрос-ответ.pdf"
-        ><b red-prim>Наиболее часто задаваемые вопросы о поступлении в колледж</b></a
-      >
+      <icon-wrapper class="icon-tap" width="20" height="24"><icon-tapclick /></icon-wrapper><a
+        href="\data\programa-d-s\Рубрика-Вопрос-ответ.pdf"><b red-prim>Наиболее часто задаваемые вопросы о поступлении в
+          колледж</b></a>
     </h2>
     <p class="ab__p click ab__link">
-      <b red-prim
-        ><icon-wrapper class="icon-tap" width="20" height="24"><icon-tapclick /></icon-wrapper
-        ><a href="https://vk.com/im?media=&sel=-63457955">Вопросы и ответы</a></b
-      >
+      <b red-prim><icon-wrapper class="icon-tap" width="20" height="24"><icon-tapclick /></icon-wrapper><a
+          href="https://vk.com/im?media=&sel=-63457955">Вопросы и ответы</a></b>
     </p>
     <div v-show="advantage">
       <p class="ab__p"><b>Омский государственный технический университет</b></p>
@@ -560,17 +521,11 @@
       </swiper-slide>
       <swiper-slide>
         <h2 class="ab__subtitle"><b red>IT-лаборатория</b></h2>
-        <img
-          class="img-single__minimg"
-          alt="Slider-Image"
-          src="/img/committee/Компьютерный класс.jpg" />
+        <img class="img-single__minimg" alt="Slider-Image" src="/img/committee/Компьютерный класс.jpg" />
       </swiper-slide>
       <swiper-slide>
         <h2 class="ab__subtitle"><b red>Спортивный зал</b></h2>
-        <img
-          class="img-single__minimg"
-          alt="Slider-Image"
-          src="/img/committee/Спортивный зал.jpg" />
+        <img class="img-single__minimg" alt="Slider-Image" src="/img/committee/Спортивный зал.jpg" />
       </swiper-slide>
       <swiper-slide>
         <h2 class="ab__subtitle"><b red>Мастерская по компетенции "Поварское дело"</b></h2>
@@ -721,32 +676,43 @@ export default {
 .ab__video {
   width: 100%;
   margin: 0 auto;
-  max-width: 800px; /* Максимальная ширина видео */
-  padding: 20px; /* Отступы вокруг видео */
-  background-color: #f0f0f0; /* Фоновый цвет */
-  border-radius: 10px; /* Закругленные углы */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+  max-width: 800px;
+  /* Максимальная ширина видео */
+  padding: 20px;
+  /* Отступы вокруг видео */
+  background-color: #f0f0f0;
+  /* Фоновый цвет */
+  border-radius: 10px;
+  /* Закругленные углы */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Тень */
 }
 
 .ab__video video {
-  width: 100%; /* Ширина видео */
-  height: auto; /* Автоматическая высота */
-  border-radius: 10px; /* Закругленные углы */
+  width: 100%;
+  /* Ширина видео */
+  height: auto;
+  /* Автоматическая высота */
+  border-radius: 10px;
+  /* Закругленные углы */
 }
 
 /* Медиа-запросы для адаптивности */
 
 @media (max-width: 768px) {
   .ab__video {
-    padding: 10px; /* Уменьшение отступов на меньших экранах */
+    padding: 10px;
+    /* Уменьшение отступов на меньших экранах */
   }
 }
 
 @media (max-width: 480px) {
   .ab__video {
-    padding: 5px; /* Ещё меньше отступов на очень маленьких экранах */
+    padding: 5px;
+    /* Ещё меньше отступов на очень маленьких экранах */
   }
 }
+
 .ab__table {
   width: 100%;
   border-collapse: collapse;
@@ -779,26 +745,32 @@ export default {
     color: $primary-color;
     display: inline;
   }
+
   &__overflow {
     max-width: 100vw;
     overflow: auto;
   }
 }
+
 .ul {
   &__dash {
-    > li {
+    >li {
       list-style-type: none;
+
       &::before {
         content: '-';
         margin-right: 6px;
       }
     }
   }
+
   &__square {
     position: relative;
-    > li {
+
+    >li {
       margin-top: 8px;
       list-style-type: none;
+
       &::before {
         content: '▀';
         top: 4px;
@@ -810,49 +782,62 @@ export default {
     }
   }
 }
+
 .small {
   &__text {
     @extend %tg-event-card-subtitle;
+
     @include medium-media() {
       font-size: 14px;
     }
   }
 }
+
 b[red-prim] {
   color: $primary-color;
 }
+
 .table {
   max-width: 1000px;
+
   &-center {
     overflow: auto;
   }
 }
+
 .center {
   margin-top: 24px;
   max-width: 1000px;
-  > * {
+
+  >* {
     margin-left: auto;
     margin-right: auto;
   }
 }
+
 .slider_committe {
   margin: 0px;
   margin-top: 24px;
   max-width: 1000px;
 }
+
 .click {
   cursor: pointer;
 }
+
 .contacts {
   flex: none;
+
   &__row {
     display: flex;
   }
+
   &__social {
     &:nth-child(even) {
       margin: 0 12px;
     }
   }
+
   &__socials {
     flex-grow: 1;
   }
@@ -885,6 +870,7 @@ b[red-prim] {
     width: 230px;
     height: auto;
   }
+
   .logoStroypodryad {
     width: 270px;
     height: auto;
@@ -897,6 +883,7 @@ b[red-prim] {
     width: 300px;
     height: auto;
   }
+
   .logoStroypodryad {
     width: 300px;
     height: 180px;
@@ -905,6 +892,7 @@ b[red-prim] {
 }
 
 @media screen and (max-width: 556px) {
+
   // .logos {
   //   flex-direction: column;
   // }
