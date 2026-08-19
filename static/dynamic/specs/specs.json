@@ -19,6 +19,7 @@
       "тестировщик ПО"
     ],
     "code": "090211-1",
+    "mob": "/data/2026/mob/09_02_11_mob_2026.pdf",
     "group": "ФП"
   },
   {
@@ -41,6 +42,7 @@
       "junior-программист"
     ],
     "code": "090211-2",
+    "web": "/data/2026/web/09_02_11_web_2026.pdf",
     "group": "ФП"
   },
   {
@@ -54,7 +56,11 @@
       "сопровождение и обслуживание программного обеспечения компьютерных систем;",
       "разработка, администрирование и защита баз данных."
     ],
-    "jobs": ["программист", "системный администратор", "администратор баз данных"],
+    "jobs": [
+      "программист",
+      "системный администратор",
+      "администратор баз данных"
+    ],
     "code": "090207-1",
     "plan21": "/data/educational/09_02_07_programmist_2021.pdf",
     "plan2024": "/data/educational/2024/uchebnyj_plan_09_02_07_informatsionnye_sistemy_i_programmirovanie_programmist.pdf",
@@ -67,14 +73,12 @@
     "educationProgram": "/data/educational/09_02_07_programmist_ep.pdf",
     "imgup": "/img/spec/isp1.jpg",
     "imgc": "/img/spec/isp2.jpg",
-
     "imgdown": "/img/spec/isp3.jpg",
     "careerMap": "/img/spec/Карьерная карта 09.02.07 Программист.jpg"
   },
   {
     "name": "09.02.07 ИНФОРМАЦИОННЫЕ СИСТЕМЫ И ПРОГРАММИРОВАНИЕ (КВАЛИФИКАЦИЯ – РАЗРАБОТЧИК WEB И МУЛЬТИМЕДИЙНЫХ ПРИЛОЖЕНИЙ)",
     "qualification": "Разработчик WEB и мультимедийных приложений",
-
     "period": "на базе 9 классов: 3 года 8 месяцев.",
     "formOfEducation": "Очная.",
     "activities": [
@@ -92,7 +96,6 @@
     "nameprof": " (квалификация - разработчик веб и мультимедийных приложений) 2024",
     "plan24": "/data/educational/24_09_02_07_razrabotchik_veb_i_mul_timedijnyh_prilozhenij_ep.pdf",
     "plan2024": "/data/educational/2024/uchebnyj_plan_09_02_07_informatsionnye_sistemy_i_programmirovanie_razrabotchik_veb.pdf",
-    "plan": "/data/educational/09_02_07_web_2023.pdf",
     "plan2024web": "/data/educational/2024/Учебный план 09.02.07 Информационные системы и программирование (разработчик веб).pdf",
     "plan2025web": "/data/2025/web/uchebnyj_plan_09_02_07_razrabotchik_veb_2025_2.pdf",
     "plan2025web2": "/data/2025/web/obrazovatel_naja_programma_09_02_07_razrabotchik_veb_2025.pdf",
@@ -125,6 +128,10 @@
       "специалист социальной защиты"
     ],
     "code": "400204",
+
+    "plan2026": "/data/educational/2026/you/Учебный_план_40.02.04_2026.pdf",
+    "plan2026z": "/data/educational/2026/you/Учебный_план_40.02.04_заочное_2026.pdf",
+
     "plan2024": "/data/educational/2024/uchebnyj_plan_40_02_04_jurisprudentsija.pdf",
     "plan20249": "/data/educational/2024/uchebnyj_plan_40_02_04_jurisprudentsija_na_baze_9_kl_zaochnoe.pdf",
     "you1": "/data/2025/you/you12025.pdf",
@@ -151,11 +158,19 @@
       "проведение расчетов с бюджетом и внебюджетными фондами;",
       "осуществление налогового учета и налогового планирования в организации."
     ],
-    "jobs": ["бухгалтер", "кассир"],
+    "jobs": [
+      "бухгалтер",
+      "кассир"
+    ],
     "code": "380201",
     "plan21": "/data/educational/38_02_01_2021.pdf",
-    "planIX": "/data/educational/38_02_01_9_kl_2023.pdf",
-    "planXI": "/data/educational/38_02_01_11_kl_2023.pdf",
+    "planXII": "/data/educational/38_02_01_9_kl_2025.pdf",
+    "planXIII": "/data/educational/38_02_01_11_kl_2025.pdf",
+    "planXIIII": "/data/educational/38_02_01_9_kl_2024.pdf",
+    "planXIIIII": "/data/educational/38_02_01_11_kl_2024.pdf",
+    "planXIIIIII": "/data/educational/38_02_01_2024.pdf",
+    "planXVI": "/data/educational/38_02_01_9_kl_2026.pdf",
+    "planXVII": "/data/educational/38_02_01_11_kl_2026.pdf",
     "plan20249": "/data/educational/2024/uchebnyj_plan_38_02_01_ekonomika_i_buhgalterskij_uchet_po_otrasljam_na_baze_9_kl2.pdf",
     "plan202411": "/data/educational/2024/uchebnyj_plan_38_02_01_ekonomika_i_buhgalterskij_uchet_po_otrasljam_na_baze_11_kl.pdf",
     "eduprocess": "/data/educational/grafik_uchebnogo_protsessa_38_02_01.pdf",
@@ -185,21 +200,19 @@
       "хостес "
     ],
     "code": "430216",
+
+    "plan2026_ekz": "/data/educational/2026/turekz/Учебный_план_43.02.16_экскурс_2026.pdf",
+
     "eduprocess": "/data/educational/grafik_uchebnogo_protsessa_43_02_16.pdf",
     "nameprof": " (квалификация - Туризм и гостеприимство), 2024 г.",
     "nameprof2": " (квалификация - Туризм и гостеприимство), 2024 г.",
     "plan2024": "/data/educational/2024/uchebnyj_plan_43_02_16_turizm_i_gostepriimstvo_gostinichnye_uslugi.pdf",
     "educationProgram": "/data/educational/2024/obrazovatel_naja_programma_professionaliteta_po_spetsial_nosti_43_02_16_gostinichnye_uslugi.pdf",
     "educationProgram2": "/data/educational/2024/obrazovatel_naja_programma_professionaliteta_po_spetsial_nosti_43_02_16_ekskursionnye_uslugi.pdf",
-    "tg1": "/data/2025/ekz/tg12025.pdf",
     "tg2": "/data/2025/ekz/tg22025.pdf",
-    "tg3": "/data/2025/ekz/tg32025.pdf",
     "tg4": "/data/2025/ekz/tg42025.pdf",
-    "tg5": "/data/2025/ekz/tg52025.pdf",
     "tg6": "/data/2025/ekz/tg62025.pdf",
-    "tg7": "/data/educational/24_43_02_16_urizm_i_gostepriimstvo.pdf",
     "tg8": "/data/educational/24_43_02_16_turizm_i_gostepriimstvo1.pdf",
-    "tg9": "/data/educational/43_02_16_2023.pdf",
     "tg10": "",
     "tg": "",
     "ttg11": "/data/2025/ekz/rpvtgg.pdf",
@@ -207,7 +220,6 @@
     "imgc": "/img/spec/gostinDelo2.jpg",
     "imgdown": "/img/spec/gostinDelo3.jpg",
     "careerMap": [
-      "/img/spec/Карьерная карта 43.02.16 Гостиничные услуги.jpg",
       "/img/spec/Карьерная карта 43.02.16 Экскурсионные услуги.jpg"
     ],
     "group": "ФП"
@@ -224,20 +236,32 @@
       "организация и контроль текущей деятельности работников службы бронирования и продаж."
     ],
     "jobs": [
-      "администратор различных средств размещения гостиничного типа",
-      "руководитель службы бронирования, службы продаж",
-      "портье",
-      "метрдотель",
-      "горничная"
+      "Администратор (ресепшионист) гостиницы (встречает гостей, занимается заселением и выселением, консультирует по услугам, координирует работу служб, решает проблемные ситуации).",
+      "Специалист по приёму и размещению гостей (отвечает за встречу гостей, оформление документов, контроль выезда).",
+      "Менеджер по бронированию (занимается резервированием номеров, работает с системами бронирования 1С:Отель).",
+      "Менеджер гостиничного сервиса (отвечает за поддержание высоких стандартов обслуживания, оценивает удовлетворённость гостей, участвует в маркетинговых акциях).",
+      "Управляющий отелем (руководит всей работой гостиницы: организует процессы, контролирует качество, управляет бюджетом и персоналом).",
+      "Батлер (специализируется на обслуживании VIP-гостей в пятизвёздочных отелях: сопровождает при заселении, выполняет бытовые поручения).",
+      "Горничная (отвечает за уборку номеров и поддержание порядка в жилых помещениях)."
     ],
+
     "code": "430216-2",
+
+    "plan2026_gost": "/data/educational/2026/turgost/Учебный_план_43.02.16_гост_2026.pdf",
+
+    "tgg1": "/data/2025/turgost/43.02.16_гостиничные_услуги_2025.pdf",
+    "tgg3": "/data/2025/turgost/Образовательная_программа_43.02.16_(гостиничные_услуги)_2025.pdf",
+    "tgg5": "/data/educational/2024/turgost/Учебный_план_43.02.16_Туризм_и_гостеприимство_(гостиничные_услуги).pdf",
+
+
     "plan21": "/data/educational/43_02_14_2021.pdf",
     "plan2024": "/data/educational/2024/uchebnyj_plan_43_02_16_turizm_i_gostepriimstvo_ekskursionnye_uslugi.pdf",
     "eduprocess": "/data/educational/grafik_uchebnogo_protsessa_43_02_14.pdf",
-    "educationProgram": "/data/educational/2024/Образовательная программа профессионалитета по специальности 43.02.16 (гостиничные услуги).pdf",
+    "educationProgram2024": "/data/educational/2024/turgost/Образовательная программа профессионалитета по специальности 43.02.16 (гостиничные услуги).pdf",
     "imgup": "/img/spec/gostinDelo1.jpg",
     "imgc": "/img/spec/gostinDelo2.jpg",
     "imgdown": "/img/spec/gostinDelo3.jpg",
+    "careerMap": "/img/spec/Карьерная карта 43.02.16 Гостиничные услуги.jpg",
     "group": "ФП"
   },
   {
@@ -245,9 +269,21 @@
     "qualification": "",
     "period": "на базе 9 классов: 3 года 10 месяцев.",
     "formOfEducation": "Очная.",
-    "activities": [],
-    "jobs": [],
+    "activities": [
+      "Организация и контроль текущей деятельности служб предприятий туризма и гостеприимства;",
+      "Предоставление услуг предприятия питания;",
+      "Предоставление гостиничных услуг;",
+      "Выполнение работ по профессии 20062 Администратор;",
+      "Ведение предпринимательской деятельности."
+    ],
+    "jobs": [
+      "Менеджер по питанию (организует работу службы питания в гостиницах, ресторанах, кафе, столовых, кейтеринговых компаниях. Планирует потребности в ресурсах и персонале, контролирует качество обслуживания, разрабатывает меню, внедряет стандарты сервиса);",
+      "Менеджер службы питания в отеле (отвечает за организацию питания гостей, контролирует работу кухни, бара и других подразделений, связанных с обслуживанием питания);",
+      "Специалист по клиентскому сервису (обеспечивает высокий уровень обслуживания, работает с возражениями и конфликтными ситуациями, поддерживает положительный имидж заведения);",
+      "Менеджер по развитию гастрономических проектов (участвует в создании новых концепций заведений, изучает тренды в гастрономии и ресторанном сервисе)."
+    ],
     "code": "430216-1",
+    "plan2026_pit": "/data/educational/2026/turpit/Учебный_план_43.02.16_питание_2026.pdf",
     "group": "ФП"
   },
   {
@@ -271,11 +307,7 @@
     "td6": "/data/2025/kom/td62025.pdf",
     "td7": "/data/educational/24_38_02_08_spetsialist_torgovogo_dela1.pdf",
     "td8": "/data/educational/24_38_02_08_spetsialist_torgovogo_dela.pdf",
-    "td9": "/data/educational/38_02_04_11_kl_2023.pdf",
-    "td10": "/data/educational/38_02_04_9_kl_2023.pdf",
     "tdd11": "/data/2025/kom/РПВ_воспитания_2024_38_02_08_Торговое_дело.pdf",
-    "planZ": "/data/educational/38_02_04_zaochnoe_2023.pdf",
-
     "eduprocess": "/data/educational/grafik_uchebnogo_protsessa_38_02_04.pdf",
     "educationProgram": "/data/educational/obrazovatel_naja_programma_professionaliteta_38_02_08_kommertsija.pdf",
     "imgup": "/img/spec/komerc1.jpg",
@@ -316,8 +348,6 @@
     "tt6": "/data/2025/tov/tt62025.pdf",
     "tt7": "/data/2025/tov/tt72025.pdf",
     "tt8": "/data/2025/tov/tt82025.pdf",
-    "tt9": "/data/educational/38_02_05_9_kl_2023.pdf",
-    "tt10": "/data/educational/38_02_05_11_kl_2023.pdf",
     "tt11": "",
     "tt": "",
     "eduprocess": "/data/educational/grafik_uchebnogo_protsessa_38_02_05.pdf",
@@ -341,12 +371,19 @@
       "организация и ведение процессов приготовления, оформления и подготовки к реализации хлебобулочных, мучных кондитерских изделий сложного ассортимента с учетом потребностей различных категорий потребителей, видов и форм обслуживания;",
       "организация и контроль текущей, деятельности подчиненного персонала."
     ],
-    "jobs": ["шеф-повар", "повар-кондитер", "повар"],
+    "jobs": [
+      "шеф-повар",
+      "повар-кондитер",
+      "повар"
+    ],
     "code": "430215",
+
+    "plan2026_9": "/data/educational/2026/pov/Учебный_план_43.02.15_9_кл._2026.pdf",
+    "plan2026_11": "/data/educational/2026/pov/Учебный_план_43.02.15_11_кл._2026.pdf",
+
     "planIX21": "/data/educational/43_02_15_baza_9_kl_2021.pdf",
     "planXI21": "/data/educational/43_02_15_baza_11_kl_2021.pdf",
     "nameprof": " (квалификация - Поварское и кондитерское дело)",
-    "plan24": "/data/educational/24_43_02_15_obrazovatel_naja_programma_professionaliteta.pdf",
     "eduprocess": "/data/educational/grafik_uchebnogo_protsessa_43_02_15.pdf",
     "educationProgram": "/data/educational/2024/obrazovatel_naja_programma_professionaliteta_43_02_15.pdf",
     "pkd1": "/data/2025/pov/pkd12025.pdf",
@@ -357,8 +394,6 @@
     "pkd6": "/data/educational/2024/uchebnyj_plan_43_02_15_povarskoe_i_konditerskoe_delo_na_baze_9_kl.pdf",
     "pkd7": "/data/2025/pov/pkd72025.pdf",
     "pkd8": "/data/2025/pov/pkd82025.pdf",
-    "pkd9": "/data/educational/43_02_15_11_kl_2023.pdf",
-    "pkd10": "/data/educational/43_02_15_9_kl_2023.pdf",
     "imgup": "/img/spec/conditer1.jpg",
     "imgc": "/img/spec/conditer2.jpg",
     "imgdown": "/img/spec/conditer3.jpg",
@@ -377,8 +412,15 @@
       "приготовление, оформление и подготовка к реализации холодных и горячих сладких блюд, десертов, напитков разнообразного ассортимента;",
       "приготовление, оформление и подготовка к реализации хлебобулочных, мучных кондитерских изделий разнообразного ассортимента."
     ],
-    "jobs": ["повар", "кондитер", "пекарь"],
+    "jobs": [
+      "повар",
+      "кондитер",
+      "пекарь"
+    ],
     "code": "430109",
+
+    "plan20026": "/data/educational/2026/povkon/Учебный_план_43.01.09_2026.pdf",
+
     "plan21": "/data/educational/43_01_09_2021.pdf",
     "nameprof": " (квалификация - Повар, кондитер)",
     "pk1": "/data/2025/pk12025.pdf",
@@ -387,7 +429,6 @@
     "pk4": "/data/educational/obrazovatel_naja_programma_43_01_09_povar_konditer_2024_g.pdf",
     "pk5": "/data/2025/povkon/pk52025.pdf",
     "pk6": "",
-    "plan": "/data/educational/43_01_09_2023.pdf",
     "eduprocess": "/data/educational/grafik_uchebnogo_protsessa_43_01_09.pdf",
     "educationProgram": "/data/educational/Образовательная_программа_43_01_09_Повар,кондитер_2024_г_.pdf",
     "imgup": "/img/spec/povar1.jpg",
@@ -396,7 +437,31 @@
     "careerMap": "/img/spec/photo_2025-10-31_09-26-26.jpg",
     "group": "ФП"
   },
-
+  {
+    "name": "26.01.09 МОТОРИСТ СУДОВОЙ",
+    "qualification": "Моторист самостоятельного управления судовым двигателем; помощник механика",
+    "period": "на базе 9 классов: 2 года 10 месяцев.",
+    "formOfEducation": "Очная.",
+    "activities": [
+      "эксплуатация, техническое обслуживание и ремонт главных энергетических установок и вспомогательных механизмов, судовых систем и технических устройств;",
+      "выполнение судовых работ;",
+      "обеспечение безопасности плавания."
+    ],
+    "jobs": [
+      "моторист-рулевой",
+      "матрос",
+      "помощник механика"
+    ],
+    "code": "260109",
+    "plan2024": "/data/educational/2024/Учебный план 26.01.09 Моторист судовой.pdf",
+    "mot1": "/data/2025/mot/26_01_09_2025.pdf",
+    "mot2": "/data/2025/mot/uchebnyj_plan_26_01_09_motorist_sudovoj.pdf",
+    "eduprocess": "/data/educational/ГРАФИК УЧЕБНОГО ПРОЦЕССА 26.01.09.pdf",
+    "educationProgram": "/data/educational/26.01.09 Моторист судовой ep.pdf",
+    "imgup": "/img/spec/motorist1.jpg",
+    "imgc": "/img/spec/motorist2.jpg",
+    "imgdown": "/img/spec/motorist3.jpg"
+  },
   {
     "name": "26.02.05 ЭКСПЛУАТАЦИЯ СУДОВЫХ ЭНЕРГЕТИЧЕСКИХ УСТАНОВОК",
     "qualification": "Техник – судомеханик",
@@ -407,9 +472,16 @@
       "обеспечение безопасности плавания;",
       " эксплуатация судового электрооборудования и средств автоматики."
     ],
-    "jobs": ["слесарь-судоремонтник", "моторист", "помощник механика", "слесарь-механик"],
+    "jobs": [
+      "слесарь-судоремонтник",
+      "моторист",
+      "помощник механика",
+      "слесарь-механик"
+    ],
     "code": "260205",
-    "plan": "/data/educational/26_02_05_2023.pdf",
+    "sud1": "/data/2025/sud/26_02_05_2025.pdf",
+    "sud2": "/data/2025/sud/26_02_05_2024.pdf",
+    "sud3": "/data/2026/sud/26_02_05_2026.pdf",
     "plan2024": "/data/educational/2024/uche_nyj_plan_26_02_05_ekspluatatsija_sudovyh.pdf",
     "plan20242": "/data/educational/2024/uche_nyj_plan_26_02_05_ekspluatatsija_sudovyh_energeticheskih_ustanovok.pdf",
     "eduprocess": "/data/educational/grafik_uchebnogo_protsessa_26_02_05.pdf",
