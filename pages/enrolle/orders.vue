@@ -1,6 +1,15 @@
 <template>
   <block-ab title="Приказы о зачислении" class="enrollment-orders">
-    <!-- <common-documents-list json-path="documents/enrolle-orders.json" class="documents-list" /> -->
+    <common-documents-list json-path="documents/enrolle-orders.json" class="documents-list" />
+    
+    <div class="notice-banner-wrapper">
+      <div class="notice-banner">
+        <span class="notice-banner__text">
+          На заочное отделение приём документов продолжается — 
+          <strong>успей подать!</strong>
+        </span>
+      </div>
+    </div>
   </block-ab>
 </template>
 
@@ -11,10 +20,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-//стили под текст приказы о зачислении будут добавлены в скором времени
-
-//-------
-
 .enrollment-orders {
   padding: 25px;
   background-color: #ffffff;
@@ -48,32 +53,30 @@ export default {
   margin: 2rem 0;
 }
 
-.notice-container {
-  background-color: #f8f9fa;
-  padding: 20px;
-  border-radius: 8px;
-  margin-top: 1.5rem;
+.notice-banner-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin: 1.5rem 0 0.5rem;
 }
 
-.notice-text {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #34495e;
-  margin-bottom: 1rem;
+.notice-banner {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #fef9e7;
+  border-left: 4px solid #f1c40f;
+  border-radius: 4px;
+}
+
+.notice-banner__text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #2c3e50;
+  white-space: nowrap;
 
   strong {
-    color: #e74c3c;
+    color: #c0392b;
     font-weight: 600;
   }
-}
-
-.highlight {
-  background-color: #fff9e6;
-  padding: 12px 15px;
-  border-left: 4px solid #f1c40f;
-  border-radius: 0 4px 4px 0;
-  font-weight: 500;
-  color: #2c3e50;
 }
 
 @media (max-width: 768px) {
@@ -85,8 +88,17 @@ export default {
     font-size: 1.5rem;
   }
 
-  .notice-text {
-    font-size: 1rem;
+  .notice-banner-wrapper {
+    justify-content: flex-start;
+  }
+
+  .notice-banner {
+    padding: 6px 12px;
+  }
+
+  .notice-banner__text {
+    font-size: 0.85rem;
+    white-space: normal; /* перенос на мобильных */
   }
 }
 </style>
