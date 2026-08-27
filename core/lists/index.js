@@ -220,6 +220,7 @@ export const projects = [
 ]
 
 export const links = [
+  createLink('https://minobrnauki.gov.ru/', 'МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РФ'),
   createLink('https://edu.gov.ru/', 'МИНИСТЕРСТВО ПРОСВЕЩЕНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ'),
   createLink('https://mobr.omskportal.ru/oiv/mobr', 'МИНИСТЕРСТВО ОБРАЗОВАНИЯ ОМСКОЙ ОБЛАСТИ'),
   createLink('https://irooo.ru/', 'ИНСТИТУТ РАЗВИТИЯ ОБРАЗОВАНИЯ ОМСКОЙ ОБЛАСТИ'),
