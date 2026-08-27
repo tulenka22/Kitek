@@ -9,7 +9,7 @@
     <div v-if="readtable != ' '">
       <h2 class="ab__subtitle" v-for="spec in srecs" :key="spec.abgroup">
         <b red v-if="spec.abgroup == readtable">
-          Специальность "{{ spec.name }}" ({{ spec.description }})
+          Список рекомендованых к зачислению по специальности "{{ spec.name }}" ({{ spec.description }})
         </b>
         <b v-if="spec.abgroup == readtable">
           количество бюджетных мест {{ spec.p }}
@@ -30,10 +30,10 @@
                 номер
               </th>
               <th class="a-table__cell a-table__cell-8 a-table__cell-center">Ф.И.О.</th>
-              <th class="a-table__cell a-table__cell-8 a-table__cell-center">Средний балл</th>
+              <!-- <th class="a-table__cell a-table__cell-8 a-table__cell-center">Средний балл</th>
               <th class="a-table__cell a-table__cell-8 a-table__cell-center">
                 Документ об образовании
-              </th>
+              </th> -->
             </tr>
           </thead>
 
@@ -64,17 +64,17 @@
               </td>
 
               <!-- Средний балл -->
-              <td v-if="emp.fio == search" class="a-table__cell a-table__cell-8 a-table__cell-center result">
+              <!-- <td v-if="emp.fio == search" class="a-table__cell a-table__cell-8 a-table__cell-center result">
                 <b red>{{ emp.sba }}</b>
               </td>
               <td v-else class="a-table__cell a-table__cell-8 a-table__cell-center">
                 <p>{{ emp.sba }}</p>
-              </td>
+              </td> -->
 
-              <!-- Документ об образовании -->
+              <!-- Документ об образовании
               <td class="a-table__cell a-table__cell-8 a-table__cell-center">
                 <p>{{ emp.doc }}</p>
-              </td>
+              </td> -->
             </tr>
           </tbody>
         </table>

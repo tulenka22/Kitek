@@ -138,8 +138,8 @@
             образования, 2025 г.</a>
         </li>
         <li v-if="currentSpec.baza11">
-          <a class="ab__link" target="_blank" :href="currentSpec.baza11">Учебный план на базе среднего общего
-            образования, 2025 г.
+          <a class="ab__link" target="_blank" :href="currentSpec.baza11"
+            >Учебный план на базе среднего общего образования, 2025 г.
           </a>
         </li>
 
