@@ -128,10 +128,8 @@
       "специалист социальной защиты"
     ],
     "code": "400204",
-
     "plan2026": "/data/educational/2026/you/Учебный_план_40.02.04_2026.pdf",
     "plan2026z": "/data/educational/2026/you/Учебный_план_40.02.04_заочное_2026.pdf",
-
     "plan2024": "/data/educational/2024/uchebnyj_plan_40_02_04_jurisprudentsija.pdf",
     "plan20249": "/data/educational/2024/uchebnyj_plan_40_02_04_jurisprudentsija_na_baze_9_kl_zaochnoe.pdf",
     "you1": "/data/2025/you/you12025.pdf",
@@ -200,9 +198,7 @@
       "хостес "
     ],
     "code": "430216",
-
     "plan2026_ekz": "/data/educational/2026/turekz/Учебный_план_43.02.16_экскурс_2026.pdf",
-
     "eduprocess": "/data/educational/grafik_uchebnogo_protsessa_43_02_16.pdf",
     "nameprof": " (квалификация - Туризм и гостеприимство), 2024 г.",
     "nameprof2": " (квалификация - Туризм и гостеприимство), 2024 г.",
@@ -213,6 +209,7 @@
     "tg4": "/data/2025/ekz/tg42025.pdf",
     "tg6": "/data/2025/ekz/tg62025.pdf",
     "tg8": "/data/educational/24_43_02_16_turizm_i_gostepriimstvo1.pdf",
+    "tg9": "/data/2026/ekz/Образовательная программа 43.02.16 (экскурсионные услуги)_ 2026.pdf",
     "tg10": "",
     "tg": "",
     "ttg11": "/data/2025/ekz/rpvtgg.pdf",
@@ -244,16 +241,12 @@
       "Батлер (специализируется на обслуживании VIP-гостей в пятизвёздочных отелях: сопровождает при заселении, выполняет бытовые поручения).",
       "Горничная (отвечает за уборку номеров и поддержание порядка в жилых помещениях)."
     ],
-
     "code": "430216-2",
-
     "plan2026_gost": "/data/educational/2026/turgost/Учебный_план_43.02.16_гост_2026.pdf",
-
+    "tgg2": "/data/2026/turgost/Образовательная программа 43.02.16 (гостиничные услуги)_ 2026.pdf",
     "tgg1": "/data/2025/turgost/43.02.16_гостиничные_услуги_2025.pdf",
     "tgg3": "/data/2025/turgost/Образовательная_программа_43.02.16_(гостиничные_услуги)_2025.pdf",
     "tgg5": "/data/educational/2024/turgost/Учебный_план_43.02.16_Туризм_и_гостеприимство_(гостиничные_услуги).pdf",
-
-
     "plan21": "/data/educational/43_02_14_2021.pdf",
     "plan2024": "/data/educational/2024/uchebnyj_plan_43_02_16_turizm_i_gostepriimstvo_ekskursionnye_uslugi.pdf",
     "eduprocess": "/data/educational/grafik_uchebnogo_protsessa_43_02_14.pdf",
@@ -284,6 +277,7 @@
     ],
     "code": "430216-1",
     "plan2026_pit": "/data/educational/2026/turpit/Учебный_план_43.02.16_питание_2026.pdf",
+    "tgp": "/data/2026/turpit/Образовательная программа 43.02.16 (услуги предприятия питания)_ 2026.pdf",
     "group": "ФП"
   },
   {
@@ -308,6 +302,10 @@
     "td7": "/data/educational/24_38_02_08_spetsialist_torgovogo_dela1.pdf",
     "td8": "/data/educational/24_38_02_08_spetsialist_torgovogo_dela.pdf",
     "tdd11": "/data/2025/kom/РПВ_воспитания_2024_38_02_08_Торговое_дело.pdf",
+    "td12": "/data/2026/kom/Учебный план_38.02.08_коммерция_9кл._2026.pdf",
+    "td13": "/data/2026/kom/Учебный план_38.02.08_коммерция_11кл._2026.pdf",
+    "td14": "/data/2026/kom/Образовательная программа 38.02.08 (коммерция)_ ООО_ 2026.pdf",
+    "td15": "/data/2026/kom/Образовательная программа 38.02.08 (коммерция)_ СОО_ 2026.pdf",
     "eduprocess": "/data/educational/grafik_uchebnogo_protsessa_38_02_04.pdf",
     "educationProgram": "/data/educational/obrazovatel_naja_programma_professionaliteta_38_02_08_kommertsija.pdf",
     "imgup": "/img/spec/komerc1.jpg",
@@ -350,7 +348,8 @@
     "tt8": "/data/2025/tov/tt82025.pdf",
     "tt9": "/data/2026/tov/38_02_08_9_kl_2026.pdf",
     "tt10": "/data/2026/tov/38_02_08_11_kl_2026.pdf",
-    "tt11": "",
+    "tt11": "/data/2026/tov/Образовательная программа 38.02.08 (Товароведение)_ ООО_ 2026.pdf",
+    "tt12": "/data/2026/tov/Образовательная программа 38.02.08 (товароведение)_ СОО_ 2026.pdf",
     "tt": "",
     "eduprocess": "/data/educational/grafik_uchebnogo_protsessa_38_02_05.pdf",
     "educationProgram": "/data/educational/obrazovatel_naja_programma_professionaliteta_38_02_08_tovarovedenie.pdf",
@@ -379,10 +378,8 @@
       "повар"
     ],
     "code": "430215",
-
     "plan2026_9": "/data/educational/2026/pov/Учебный_план_43.02.15_9_кл._2026.pdf",
     "plan2026_11": "/data/educational/2026/pov/Учебный_план_43.02.15_11_кл._2026.pdf",
-
     "planIX21": "/data/educational/43_02_15_baza_9_kl_2021.pdf",
     "planXI21": "/data/educational/43_02_15_baza_11_kl_2021.pdf",
     "nameprof": " (квалификация - Поварское и кондитерское дело)",
@@ -396,6 +393,8 @@
     "pkd6": "/data/educational/2024/uchebnyj_plan_43_02_15_povarskoe_i_konditerskoe_delo_na_baze_9_kl.pdf",
     "pkd7": "/data/2025/pov/pkd72025.pdf",
     "pkd8": "/data/2025/pov/pkd82025.pdf",
+    "pkd9": "/data/2026/pov/Образовательная программа 43.01.15 Поварское и кондитерское дело_ ООО_ 2026.pdf",
+    "pkd10": "/data/2026/pov/Образовательная программа 43.01.15 Поварское и кондитерское дело_ СОО_ 2026.pdf",
     "imgup": "/img/spec/conditer1.jpg",
     "imgc": "/img/spec/conditer2.jpg",
     "imgdown": "/img/spec/conditer3.jpg",
@@ -420,9 +419,7 @@
       "пекарь"
     ],
     "code": "430109",
-
     "plan20026": "/data/educational/2026/povkon/Учебный_план_43.01.09_2026.pdf",
-
     "plan21": "/data/educational/43_01_09_2021.pdf",
     "nameprof": " (квалификация - Повар, кондитер)",
     "pk1": "/data/2025/pk12025.pdf",
@@ -430,7 +427,7 @@
     "pk3": "/data/2025/povkon/pk32025.pdf",
     "pk4": "/data/educational/obrazovatel_naja_programma_43_01_09_povar_konditer_2024_g.pdf",
     "pk5": "/data/2025/povkon/pk52025.pdf",
-    "pk6": "",
+    "pk6": "/data/2026/povkon/Образовательная программа 43.01.09 Повар_ кондитер_ 2026.pdf",
     "eduprocess": "/data/educational/grafik_uchebnogo_protsessa_43_01_09.pdf",
     "educationProgram": "/data/educational/Образовательная_программа_43_01_09_Повар,кондитер_2024_г_.pdf",
     "imgup": "/img/spec/povar1.jpg",

@@ -54,6 +54,8 @@
         <li v-if="currentSpec.web">
           <a class="ab__link" target="_blank" :href="currentSpec.web">Учебный план, 2026г</a>
         </li>
+
+
         <!-- экскурсионные услуги -->
 
         <li v-if="currentSpec.plan2026_ekz">
@@ -61,6 +63,11 @@
             Учебный план (направленности - экскурсионные услуги), 2026 г.
           </a>
         </li>
+
+        <li v-if="currentSpec.tg9">
+          <a class="ab__link" target="_blank" :href="currentSpec.tg9">Образовательная программа (направленность - экскурсионные услуги), 2026г.</a>
+        </li>
+
 
         <li v-if="currentSpec.gos">
           <a class="ab__link" target="_blank" :href="currentSpec.gos">Гостиничные услуги, 2025г</a>
@@ -102,11 +109,22 @@
           </a>
         </li>
 
+        <li v-if="currentSpec.tgp">
+          <a class="ab__link" target="_blank" :href="currentSpec.tgp">
+            Образовательная программа направленности "Услуги предприятия питания", 2026 г.
+          </a>
+        </li>
+
         <!--ТУРИЗМ И ГОСТЕПРИИМСТВО (НАПРАВЛЕННОСТЬ: ГОСТИНИЧНЫЕ УСЛУГИ)-->
 
         <li v-if="currentSpec.plan2026_gost">
           <a class="ab__link" target="_blank" :href="currentSpec.plan2026_gost">
             Учебный план направленности "Гостиничные услуги", 2026 г.
+          </a>
+        </li>
+        <li v-if="currentSpec.tgg2">
+          <a class="ab__link" target="_blank" :href="currentSpec.tgg2">
+            Образовательная программа направленности "Гостиничные услуги", 2026 г.
           </a>
         </li>
         <li v-if="currentSpec.tgg1">
@@ -265,21 +283,23 @@
 
         <!-- ------------------------------------------------- -->
         <!-- ТД Коммерция -->
-        <li v-if="currentSpec.td13">
-          <a class="ab__link" target="_blank" :href="currentSpec.td13">Учебный план (направленность - коммерция) на базе
-            среднего общего образования, 2026
+
+
+        <li v-if="currentSpec.td12">
+          <a class="ab__link" target="_blank" :href="currentSpec.td12">Учебный план (направленность - коммерция) на базе основного общего образования, 2026
             г.</a>
+        </li>
+
+        <li v-if="currentSpec.td13">
+          <a class="ab__link" target="_blank" :href="currentSpec.td13">Учебный план (направленность - коммерция) на базе среднего общего образования, 2026 г.</a>
         </li>
         <li v-if="currentSpec.td14">
-          <a class="ab__link" target="_blank" :href="currentSpec.td14">Учебный план (направленность - коммерция) на базе
-            среднего общего образования(заочно), 2026
-            г.</a>
+          <a class="ab__link" target="_blank" :href="currentSpec.td14">Образовательная программа (направленность - коммерция) на базе основного общего образования, 2026 г.</a>
         </li>
-        <li v-if="currentSpec.td12">
-          <a class="ab__link" target="_blank" :href="currentSpec.td12">Учебный план (направленность - коммерция) на базе
-            основного общего образования, 2026
-            г.</a>
+        <li v-if="currentSpec.td15">
+          <a class="ab__link" target="_blank" :href="currentSpec.td15">Образовательная программа (направленность - коммерция) на базе среднего общего образования, 2026 г.</a>
         </li>
+
         <li v-if="currentSpec.td1">
           <a class="ab__link" target="_blank" :href="currentSpec.td1">Учебный план (направленность - коммерция) на базе
             основного общего образования, 2025
@@ -343,16 +363,28 @@
 
         <!-- ------------------------------------------------- -->
         <!-- ТД Товароведение -->
-        <li v-if="currentSpec.tt10">
-          <a class="ab__link" target="_blank" :href="currentSpec.tt10">Учебный план (направленность - товароведение) на
-            базе среднего общего образования,
-            2026 г.</a>
-        </li>
+        
         <li v-if="currentSpec.tt9">
           <a class="ab__link" target="_blank" :href="currentSpec.tt9">Учебный план (направленность - товароведение) на
             базе основного общего образования,
             2026 г.</a>
         </li>
+
+        <li v-if="currentSpec.tt10">
+          <a class="ab__link" target="_blank" :href="currentSpec.tt10">Учебный план (направленность - товароведение) на
+            базе среднего общего образования,
+            2026 г.</a>
+        </li>
+
+        <li v-if="currentSpec.tt11">
+          <a class="ab__link" target="_blank" :href="currentSpec.tt11">Образовательная программа (направленность - товароведение) на базе основного общего образования, 2026 г.</a>
+        </li>
+
+        <li v-if="currentSpec.tt12">
+          <a class="ab__link" target="_blank" :href="currentSpec.tt12">Образовательная программа (направленность - товароведение) на базе среднего общего образования, 2026 г.</a>
+        </li>
+
+
         <li v-if="currentSpec.tt1">
           <a class="ab__link" target="_blank" :href="currentSpec.tt1">Учебный план (направленность - товароведение) на
             базе основного общего образования,
@@ -419,6 +451,12 @@
           </a>
         </li>
 
+        <li v-if="currentSpec.pk6">
+          <a class="ab__link" target="_blank" :href="currentSpec.pk6">
+            Образовательная программа по профессии 43.01.09 Повар, кондитер, 2026 г.
+          </a>
+        </li>
+
         <li v-if="currentSpec.pk1">
           <a class="ab__link" target="_blank" :href="currentSpec.pk1">Учебный план, 2025 г.</a>
         </li>
@@ -450,6 +488,16 @@
           <a class="ab__link" target="_blank" :href="currentSpec.plan2026_11">
             Учебный план на базе среднего общего образования, 2026 г.
           </a>
+        </li>
+
+        <li v-if="currentSpec.pkd9">
+          <a class="ab__link" target="_blank" :href="currentSpec.pkd9">Образовательная программа на базе основного
+            общего образования, 2026 г.</a>
+        </li>
+
+        <li v-if="currentSpec.pkd10">
+          <a class="ab__link" target="_blank" :href="currentSpec.pkd10">Образовательная программа на базе среднего общего
+            образования, 2026 г.</a>
         </li>
 
         <li v-if="currentSpec.pkd1">
