@@ -7,10 +7,10 @@
     "url": "https://github.com/xafxafxaf"
   },
   "scripts": {
-    "dev": "nuxt",
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "set NODE_OPTIONS=--openssl-legacy-provider && nuxt generate",
     "generate:deploy": "yarn generate && yarn deploy",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup --force",
     "prepare": "husky install"
